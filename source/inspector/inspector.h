@@ -1,11 +1,12 @@
-/* //////////////////////////////////////////////////////////////
-// 
-// Autor: Gabriel Capella
-// Numero USP: 8962078
-// Sigla: GABRIELC
-// Data: 2015-10-13
-// 
-////////////////////////////////////////////////////////////// */
+/********************************************************************
+ *  Nomes: Gabriel Capella                       Números USP: 8962078 
+ *         Luís Felipe de Melo Costa Silva                    9297961
+ * 
+ *  Arquivo:   inspector.h
+ *  Descrição: Implementa uma espécie de fiscal (um juiz), que 
+ *             estaria analisando a prova durante seu decorrer. 
+ ********************************************************************/ 
+
 #ifndef INSPECTOR_H
 #define INSPECTOR_H
 
@@ -16,7 +17,7 @@
 #include "../cyclist/cyclist_info.h"
 #include "../cyclist/cyclist.h"
 
-/* definicoes de termino */
+/* Definições para o término da prova. */
 #define EMPATE 0
 #define TEAM_0 1
 #define TEAM_1 2
@@ -25,10 +26,23 @@
 
 #define NONE -1
 
-void ins_show_end_results ();
-int ins_can_go_60 (Cyclist data);
-void ins_init (int _verbose, Cyclist _cyclists, int _n, int);
-void ins_check (void *_sync);
+/* Mostra na saída padrão todos os ciclistas que quebraram. */
 void ins_show_broken ();
+
+/* Mostra a ordem de chegada e quem ganhou ou se houve empate. */
+void ins_show_end_results ();
+
+/* Devolve 0 (false) caso o ciclista não possa andar a 60 km/h.
+ * Devolve 1 (true) caso contrário. */
+int ins_can_go_60 (Cyclist data);
+
+/* Inicializa algumas variáveis necessárias para o trabalho do 
+ * fiscal. Verbose, em especial, é utilizada para informar se
+ * o modo é debug ou não. */
+void ins_init (int _verbose, Cyclist _cyclists, int _n, int);
+
+/* Função que checa algumas informações. Mais detalhes na 
+ * implementação. */
+void ins_check (void *_sync);
 
 #endif

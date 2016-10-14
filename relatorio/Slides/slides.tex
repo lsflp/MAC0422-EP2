@@ -56,14 +56,14 @@
 % changes the colors of your current slide theme.
 
 %\usecolortheme{albatross}
-%\usecolortheme{beaver}
+%usecolortheme{beaver}
 %\usecolortheme{beetle}
 %\usecolortheme{crane}
 %\usecolortheme{dolphin}
 %\usecolortheme{dove}
 %\usecolortheme{fly}
 %\usecolortheme{lily}
-%\usecolortheme{orchid}
+%usecolortheme{orchid}
 %\usecolortheme{rose}
 %\usecolortheme{seagull}
 \usecolortheme{seahorse}
@@ -75,8 +75,9 @@
 
 \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
-%\usepackage[brazilian]{babel}
+\usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{courier}
@@ -182,7 +183,7 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 %------------------------------------------------
 \begin{frame}
 	\frametitle{Módulos}
-	\framesubtitle{barrier.h}
+	\framesubtitle{barrier.c}
 	\begin{itemize}
 		\item Fizemos a nossa própria biblioteca de barreiras. 
 		\item A principal razão disso é que as barreiras da \texttt{pthread.h} não funcionariam direito quando um ciclista quebra. Quando ele quebra, sua thread é destruída, e o número de threads é alterado.
@@ -191,7 +192,12 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 
 \begin{frame}
 	\frametitle{Módulos}
-	\framesubtitle{cyclist.h}	
+	\framesubtitle{cyclist.c}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Módulos}
+	\framesubtitle{inspector.c}	
 \end{frame}
 
 \begin{frame}
@@ -202,14 +208,14 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 \begin{frame}
 	\frametitle{Entrada}
 	\begin{center}
-		\texttt{\$ ./ep2 d n [v|u] [−v]}
+		\texttt{\$ ./ep2 d n [v|u] [-v]}
 	\end{center}	
 	\begin{itemize}
 		\item \texttt{d}: número inteiro que representa o comprimento em metros da pista.
 		\item \texttt{n}: número de ciclistas em cada equipe. 
 		\item \texttt{v}: usado para definir simulações com velocidades aleatórias a cada volta. 
 		\item \texttt{u}: define simulações com velocidades uniformes de 60 km/h.  
-		\item \texttt{-v}:  opção para mostrar tudo(debug), utilizado para produzir saída para o terminal. 
+		\item \texttt{-v}: opção para mostrar tudo(debug), utilizado para produzir saída para o terminal. 
 	\end{itemize} 
 \end{frame}
 
@@ -220,7 +226,44 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 
 \begin{frame}
 	\frametitle{Testes}
-	
+	\begin{itemize}
+		\item Para os testes, executamos o programa da seguinte maneira:
+		\item \quad \texttt{\$ /usr/bin/time -v ./ep2 d n [v|u] [-v]}
+		\item Com isso, temos uma saída desse tipo, além da saída do programa:
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.4]{4.png}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item De todos esses dados, utilizamos o Maximum resident set size para fazer as medições.
+		\item Esse item representa o máximo de memória que pertenceu ao processo e ficou na RAM durante a execução, em kbytes.
+		\item Com isso, temos os seguintes gráficos, com poucos, muitos e um valor intermediário de ciclistas para uma pista pequena, média e grande.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{2.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{3.png}
+	\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -231,11 +274,5 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 	\end{itemize}
 	
 \end{frame}
-
-\begin{frame}
-\Huge{\centerline{Fim.}}
-\end{frame}
-
-%----------------------------------------------------------------------------------------
 
 \end{document} 

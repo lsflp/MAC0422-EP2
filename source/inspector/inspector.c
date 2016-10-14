@@ -1,24 +1,30 @@
-/* //////////////////////////////////////////////////////////////
-// 
-// Autor: Gabriel Capella
-// Numero USP: 8962078
-// Sigla: GABRIELC
-// Data: 2015-10-13
-// 
-////////////////////////////////////////////////////////////// */
+/********************************************************************
+ *  Nomes: Gabriel Capella                       Números USP: 8962078 
+ *         Luís Felipe de Melo Costa Silva                    9297961
+ * 
+ *  Arquivo:   inspector.c
+ *  Descrição: Implementa uma espécie de fiscal (um juiz), que 
+ *             estaria analisando a prova durante seu decorrer. O 
+ *             arquivo .c contém uma função privada, descrita abaixo.
+ ********************************************************************/ 
+
 #include "inspector.h"
 
-static Cyclist cyclists; /* vetor de ciclistas */
-static int n; /* numero de ciclistas */
-static int d; /* tamanho pista */
-static int verbose;
-static Cyclist first_3[2][3] = {{NULL}}; /* ordena os 3 primeiros */
-static int end_mode = NONE; /* marca como a corrida acabou */
-static int third_lap[3] = {0}; /* marca a vota do terceiro ciclista */
-static double time_count;
-static int *finish_order;
-static int finish_order_count;
+static Cyclist cyclists;                 /* Vetor de ciclistas */
+static int n;                            /* Número de ciclistas */
+static int d;                            /* Tamanho da pista */
+static int verbose;                      /* Modo debug ou não. */
+static Cyclist first_3[2][3] = {{NULL}}; /* Ordena os 3 primeiros */
+static int end_mode = NONE;              /* Marca como a corrida acabou */
+static int third_lap[3] = {0};           /* Marca a volta do terceiro ciclista */
+static double time_count;                /* Conta o tempo */
+static int *finish_order;                /* Vetor com as ordens de chegada */
+static int finish_order_count;           /* Conta quantos já finalizaram */
 
+/* FUNÇÃO PRIVADA ///////////////////////////////////////////////// */
+
+/* Faz uma ordenação na mão para saber a ordem dos três ciclistas mais
+ * à frente. */
 static void ins_first_three () {
     int i, t;
     for (i = 0; i < 2*n; ++i) {
@@ -37,17 +43,17 @@ static void ins_first_three () {
     }
 }
 
-/* mostra quebrados */
+/* FUNÇÕES PÚBLICAS /////////////////////////////////////////////// */
+
 void ins_show_broken () {
     int i;
-    /* mostrar ciclistas quebrados */
-    printf("Broken Team 0: ");
+    printf("Broken: Team 0: ");
     for (i = 0; i < n; ++i) {
         if (cyclists[i].status == 3)
             printf("%d (%d), ", i, cyclists[i].lap);
     }
     printf("\n");
-    printf("Broken Team 1: ");
+    printf("Broken: Team 1: ");
     for (i = n; i < 2*n; ++i) {
         if (cyclists[i].status == 3)
             printf("%d (%d), ", i, cyclists[i].lap);
@@ -55,8 +61,6 @@ void ins_show_broken () {
     printf("\n");
 }
 
-
-/* mostra a ondem de chegada */
 void ins_show_end_results () {
     int i;
     printf("Finishing order: ");
@@ -104,10 +108,10 @@ void ins_check (void * _sync) {
     Barrier *sync;
     sync = (Barrier*) _sync;
 
-    /* vamos olhar se temos que tirar alguem */
+    /* Vamos olhar se temos que tirar alguém */
     for (i = 0; i < 2*n; ++i) {
 
-        /* atualiza o numero de voltas */
+        /* Atualiza o número de voltas. */
         if (cyclists[i].lap_marker == 1) {
             cyclists[i].lap_marker = 0;
             ++(cyclists[i].lap);
@@ -118,7 +122,7 @@ void ins_check (void * _sync) {
             }
         }
 
-        /* verifica decremento barreira */
+        /* Verifica o decremento da barreira */
         if ((cyclists[i].status == 3 || cyclists[i].status == 2) 
             && cyclists[i].speed != -1) {  
             barrier_remove_one(sync);
@@ -128,6 +132,7 @@ void ins_check (void * _sync) {
             printf("N %4d, T %d, P %6d, S %2d, E %2d, D %6d, V %2d\n", cyclists[i].number, cyclists[i].team, (cyclists[i].init_position+cyclists[i].dist)%(2*d), cyclists[i].status, cyclists[i].speedway, cyclists[i].dist, cyclists[i].lap);
         }
     }
+
     ins_first_three ();
 
     if (verbose) printf("C\n");
@@ -169,4 +174,3 @@ void ins_check (void * _sync) {
 
     time_count += 0.06;
 }
-

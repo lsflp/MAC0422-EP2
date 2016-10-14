@@ -1,13 +1,18 @@
-/* //////////////////////////////////////////////////////////////
-// 
-// Autor: Gabriel Capella
-// Numero USP: 8962078
-// Sigla: GABRIELC
-// Data: 2015-10-13
-// 
-////////////////////////////////////////////////////////////// */
-/* AVISO: baseado em http://blog.albertarmea.com/post/
-// 47089939939/using-pthreadbarrier-on-mac-os-x                 */
+/********************************************************************
+ *  Nomes: Gabriel Capella                       Números USP: 8962078 
+ *         Luís Felipe de Melo Costa Silva                    9297961
+ * 
+ *  Arquivo:   barrier.v
+ *  Descrição: Biblioteca feita para lidar melhor com as barreiras de 
+ *             sincronização. O principal problema encontrado foi o 
+ *             fato de quando um ciclista quebrava, havia uma 
+ *             dificuldade para executar as barreiras com uma thread a
+ *             menos.
+ *  AVISO:     Baseado em 
+ *             http://blog.albertarmea.com/post/47089939939/
+ *             using-pthreadbarrier-on-mac-os-x
+ ********************************************************************/ 
+
 #include "barrier.h"
 
 int barrier_init(Barrier *barrier, unsigned int count) {
@@ -42,7 +47,6 @@ int barrier_wait(Barrier *barrier, void (*func)(void *), void * func_in) {
     ++(barrier->count);
     if(barrier->count >= barrier->threads_number) {
         barrier->count = 0;
-        /* printf("> %d\n", barrier->threads_number); */
         if (func != NULL) (*func)(func_in);
         pthread_cond_broadcast(&barrier->cond);
         pthread_mutex_unlock(&barrier->mutex);
