@@ -1,0 +1,1136 @@
+10 3
+N    0, T 0, P     10, S  1, E  0, D      0, V  0
+N    1, T 0, P     -1, S  0, E -1, D      0, V  0
+N    2, T 0, P     -1, S  0, E -1, D      0, V  0
+N    4, T 1, P      0, S  1, E  0, D      0, V  0
+N    3, T 1, P     -1, S  0, E -1, D      0, V  0
+N    5, T 1, P     -1, S  0, E -1, D      0, V  0
+C
+N    5, T 1, P      0, S  1, E  0, D      0, V  0
+N    0, T 0, P     12, S  1, E  0, D      2, V  0
+N    1, T 0, P     10, S  1, E  0, D      0, V  0
+N    3, T 1, P     -1, S  0, E -1, D      0, V  0
+N    4, T 1, P      2, S  1, E  0, D      2, V  0
+N    2, T 0, P     -1, S  0, E -1, D      0, V  0
+C
+N    2, T 0, P     10, S  1, E  0, D      0, V  0
+N    1, T 0, P     12, S  1, E  0, D      2, V  0
+N    5, T 1, P      2, S  1, E  0, D      2, V  0
+N    4, T 1, P      4, S  1, E  0, D      4, V  0
+N    0, T 0, P     14, S  1, E  0, D      4, V  0
+N    3, T 1, P      0, S  1, E  0, D      0, V  0
+C
+N    3, T 1, P      2, S  1, E  0, D      2, V  0
+N    2, T 0, P     12, S  1, E  0, D      2, V  0
+N    1, T 0, P     14, S  1, E  0, D      4, V  0
+N    5, T 1, P      4, S  1, E  0, D      4, V  0
+N    0, T 0, P     16, S  1, E  0, D      6, V  0
+N    4, T 1, P      6, S  1, E  0, D      6, V  0
+C
+N    4, T 1, P      8, S  1, E  0, D      8, V  0
+N    3, T 1, P      4, S  1, E  0, D      4, V  0
+N    1, T 0, P     16, S  1, E  0, D      6, V  0
+N    5, T 1, P      6, S  1, E  0, D      6, V  0
+N    2, T 0, P     14, S  1, E  0, D      4, V  0
+N    0, T 0, P     18, S  1, E  0, D      8, V  0
+C
+N    0, T 0, P      0, S  1, E  0, D     10, V  0
+N    4, T 1, P     10, S  1, E  0, D     10, V  0
+N    5, T 1, P      8, S  1, E  0, D      8, V  0
+N    1, T 0, P     18, S  1, E  0, D      8, V  0
+N    3, T 1, P      6, S  1, E  0, D      6, V  0
+N    2, T 0, P     16, S  1, E  0, D      6, V  0
+C
+N    2, T 0, P     18, S  1, E  0, D      8, V  0
+N    0, T 0, P      2, S  1, E  0, D     12, V  0
+N    5, T 1, P     10, S  1, E  0, D     10, V  0
+N    3, T 1, P      8, S  1, E  0, D      8, V  0
+N    4, T 1, P     12, S  1, E  0, D     12, V  0
+N    1, T 0, P      0, S  1, E  0, D     10, V  0
+C
+N    1, T 0, P      2, S  1, E  0, D     12, V  0
+N    2, T 0, P      0, S  1, E  0, D     10, V  0
+N    0, T 0, P      4, S  1, E  0, D     14, V  0
+N    5, T 1, P     12, S  1, E  0, D     12, V  0
+N    3, T 1, P     10, S  1, E  0, D     10, V  0
+N    4, T 1, P     14, S  1, E  0, D     14, V  0
+C
+N    4, T 1, P     16, S  1, E  0, D     16, V  0
+N    2, T 0, P      2, S  1, E  0, D     12, V  0
+N    0, T 0, P      6, S  1, E  0, D     16, V  0
+N    1, T 0, P      4, S  1, E  0, D     14, V  0
+N    5, T 1, P     14, S  1, E  0, D     14, V  0
+N    3, T 1, P     12, S  1, E  0, D     12, V  0
+C
+N    3, T 1, P     14, S  1, E  0, D     14, V  0
+N    4, T 1, P     18, S  1, E  0, D     18, V  0
+N    1, T 0, P      6, S  1, E  0, D     16, V  0
+N    0, T 0, P      8, S  1, E  0, D     18, V  0
+N    2, T 0, P      4, S  1, E  0, D     14, V  0
+N    5, T 1, P     16, S  1, E  0, D     16, V  0
+C
+N    5, T 1, P     18, S  1, E  0, D     18, V  0
+N    3, T 1, P     16, S  1, E  0, D     16, V  0
+N    4, T 1, P      0, S  1, E  0, D     20, V  1
+N    1, T 0, P      8, S  1, E  0, D     18, V  0
+N    0, T 0, P     10, S  1, E  0, D     20, V  1
+N    2, T 0, P      6, S  1, E  0, D     16, V  0
+C
+N    2, T 0, P      8, S  1, E  0, D     18, V  0
+N    5, T 1, P      0, S  1, E  0, D     20, V  1
+N    4, T 1, P      2, S  1, E  0, D     22, V  1
+N    1, T 0, P     10, S  1, E  0, D     20, V  1
+N    3, T 1, P     18, S  1, E  0, D     18, V  0
+N    0, T 0, P     12, S  1, E  0, D     22, V  1
+C
+N    0, T 0, P     14, S  1, E  0, D     24, V  1
+N    2, T 0, P     10, S  1, E  0, D     20, V  1
+N    4, T 1, P      4, S  1, E  0, D     24, V  1
+N    5, T 1, P      2, S  1, E  0, D     22, V  1
+N    1, T 0, P     12, S  1, E  0, D     22, V  1
+N    3, T 1, P      0, S  1, E  0, D     20, V  1
+C
+N    3, T 1, P      2, S  1, E  0, D     22, V  1
+N    2, T 0, P     12, S  1, E  0, D     22, V  1
+N    0, T 0, P     16, S  1, E  0, D     26, V  1
+N    1, T 0, P     14, S  1, E  0, D     24, V  1
+N    4, T 1, P      6, S  1, E  0, D     26, V  1
+N    5, T 1, P      4, S  1, E  0, D     24, V  1
+C
+N    5, T 1, P      6, S  1, E  0, D     26, V  1
+N    3, T 1, P      4, S  1, E  0, D     24, V  1
+N    2, T 0, P     14, S  1, E  0, D     24, V  1
+N    4, T 1, P      8, S  1, E  0, D     28, V  1
+N    0, T 0, P     18, S  1, E  0, D     28, V  1
+N    1, T 0, P     16, S  1, E  0, D     26, V  1
+C
+N    1, T 0, P     18, S  1, E  0, D     28, V  1
+N    5, T 1, P      8, S  1, E  0, D     28, V  1
+N    2, T 0, P     16, S  1, E  0, D     26, V  1
+N    3, T 1, P      6, S  1, E  0, D     26, V  1
+N    0, T 0, P      0, S  1, E  0, D     30, V  1
+N    4, T 1, P     10, S  1, E  0, D     30, V  1
+C
+N    4, T 1, P     12, S  1, E  0, D     32, V  1
+N    1, T 0, P      0, S  1, E  0, D     30, V  1
+N    3, T 1, P      8, S  1, E  0, D     28, V  1
+N    5, T 1, P     10, S  1, E  0, D     30, V  1
+N    0, T 0, P      2, S  1, E  0, D     32, V  1
+N    2, T 0, P     18, S  1, E  0, D     28, V  1
+C
+N    2, T 0, P      0, S  1, E  0, D     30, V  1
+N    4, T 1, P     14, S  1, E  0, D     34, V  1
+N    3, T 1, P     10, S  1, E  0, D     30, V  1
+N    5, T 1, P     12, S  1, E  0, D     32, V  1
+N    1, T 0, P      2, S  1, E  0, D     32, V  1
+N    0, T 0, P      4, S  1, E  0, D     34, V  1
+C
+N    0, T 0, P      6, S  1, E  0, D     36, V  1
+N    2, T 0, P      2, S  1, E  0, D     32, V  1
+N    5, T 1, P     14, S  1, E  0, D     34, V  1
+N    4, T 1, P     16, S  1, E  0, D     36, V  1
+N    3, T 1, P     12, S  1, E  0, D     32, V  1
+N    1, T 0, P      4, S  1, E  0, D     34, V  1
+C
+N    1, T 0, P      6, S  1, E  0, D     36, V  1
+N    2, T 0, P      4, S  1, E  0, D     34, V  1
+N    0, T 0, P      8, S  1, E  0, D     38, V  1
+N    3, T 1, P     14, S  1, E  0, D     34, V  1
+N    4, T 1, P     18, S  1, E  0, D     38, V  1
+N    5, T 1, P     16, S  1, E  0, D     36, V  1
+C
+N    5, T 1, P     18, S  1, E  0, D     38, V  1
+N    2, T 0, P      6, S  1, E  0, D     36, V  1
+N    4, T 1, P      0, S  1, E  0, D     40, V  2
+N    1, T 0, P      8, S  1, E  0, D     38, V  1
+N    0, T 0, P     10, S  1, E  0, D     40, V  2
+N    3, T 1, P     16, S  1, E  0, D     36, V  1
+C
+N    3, T 1, P     18, S  1, E  0, D     38, V  1
+N    5, T 1, P      0, S  1, E  0, D     40, V  2
+N    2, T 0, P      8, S  1, E  0, D     38, V  1
+N    4, T 1, P      2, S  1, E  0, D     42, V  2
+N    0, T 0, P     12, S  1, E  0, D     42, V  2
+N    1, T 0, P     10, S  1, E  0, D     40, V  2
+C
+N    1, T 0, P     12, S  1, E  0, D     42, V  2
+N    3, T 1, P      0, S  1, E  0, D     40, V  2
+N    5, T 1, P      2, S  1, E  0, D     42, V  2
+N    0, T 0, P     14, S  1, E  0, D     44, V  2
+N    2, T 0, P     10, S  1, E  0, D     40, V  2
+N    4, T 1, P      4, S  1, E  0, D     44, V  2
+C
+N    4, T 1, P      6, S  1, E  0, D     46, V  2
+N    1, T 0, P     14, S  1, E  0, D     44, V  2
+N    3, T 1, P      2, S  1, E  0, D     42, V  2
+N    5, T 1, P      4, S  1, E  0, D     44, V  2
+N    2, T 0, P     12, S  1, E  0, D     42, V  2
+N    0, T 0, P     16, S  1, E  0, D     46, V  2
+C
+N    0, T 0, P     18, S  1, E  0, D     48, V  2
+N    1, T 0, P     16, S  1, E  0, D     46, V  2
+N    4, T 1, P      8, S  1, E  0, D     48, V  2
+N    5, T 1, P      6, S  1, E  0, D     46, V  2
+N    3, T 1, P      4, S  1, E  0, D     44, V  2
+N    2, T 0, P     14, S  1, E  0, D     44, V  2
+C
+N    2, T 0, P     16, S  1, E  0, D     46, V  2
+N    3, T 1, P      6, S  1, E  0, D     46, V  2
+N    0, T 0, P      0, S  1, E  0, D     50, V  2
+N    1, T 0, P     18, S  1, E  0, D     48, V  2
+N    4, T 1, P     10, S  1, E  0, D     50, V  2
+N    5, T 1, P      8, S  1, E  0, D     48, V  2
+C
+N    5, T 1, P     10, S  1, E  0, D     50, V  2
+N    2, T 0, P     18, S  1, E  0, D     48, V  2
+N    3, T 1, P      8, S  1, E  0, D     48, V  2
+N    0, T 0, P      2, S  1, E  0, D     52, V  2
+N    1, T 0, P      0, S  1, E  0, D     50, V  2
+N    4, T 1, P     12, S  1, E  0, D     52, V  2
+C
+N    4, T 1, P     14, S  1, E  0, D     54, V  2
+N    5, T 1, P     12, S  1, E  0, D     52, V  2
+N    2, T 0, P      0, S  1, E  0, D     50, V  2
+N    3, T 1, P     10, S  1, E  0, D     50, V  2
+N    0, T 0, P      4, S  1, E  0, D     54, V  2
+N    1, T 0, P      2, S  1, E  0, D     52, V  2
+C
+N    1, T 0, P      4, S  1, E  0, D     54, V  2
+N    4, T 1, P     16, S  1, E  0, D     56, V  2
+N    5, T 1, P     14, S  1, E  0, D     54, V  2
+N    2, T 0, P      2, S  1, E  0, D     52, V  2
+N    3, T 1, P     12, S  1, E  0, D     52, V  2
+N    0, T 0, P      6, S  1, E  0, D     56, V  2
+C
+N    0, T 0, P      8, S  1, E  0, D     58, V  2
+N    1, T 0, P      6, S  1, E  0, D     56, V  2
+N    4, T 1, P     18, S  1, E  0, D     58, V  2
+N    2, T 0, P      4, S  1, E  0, D     54, V  2
+N    5, T 1, P     16, S  1, E  0, D     56, V  2
+N    3, T 1, P     14, S  1, E  0, D     54, V  2
+C
+N    3, T 1, P     16, S  1, E  0, D     56, V  2
+N    0, T 0, P     10, S  1, E  0, D     60, V  3
+N    1, T 0, P      8, S  1, E  0, D     58, V  2
+N    2, T 0, P      6, S  1, E  0, D     56, V  2
+N    4, T 1, P      0, S  1, E  0, D     60, V  3
+N    5, T 1, P     18, S  1, E  0, D     58, V  2
+C
+N    5, T 1, P      0, S  1, E  0, D     60, V  3
+N    3, T 1, P     18, S  1, E  0, D     58, V  2
+N    1, T 0, P     10, S  1, E  0, D     60, V  3
+N    0, T 0, P     12, S  1, E  0, D     62, V  3
+N    2, T 0, P      8, S  1, E  0, D     58, V  2
+N    4, T 1, P      2, S  1, E  0, D     62, V  3
+C
+N    4, T 1, P      4, S  1, E  0, D     64, V  3
+N    5, T 1, P      2, S  1, E  0, D     62, V  3
+N    3, T 1, P      0, S  1, E  0, D     60, V  3
+N    1, T 0, P     12, S  1, E  0, D     62, V  3
+N    2, T 0, P     10, S  1, E  0, D     60, V  3
+N    0, T 0, P     14, S  1, E  0, D     64, V  3
+C
+N    0, T 0, P     16, S  1, E  0, D     66, V  3
+N    4, T 1, P      6, S  1, E  0, D     66, V  3
+N    5, T 1, P      4, S  1, E  0, D     64, V  3
+N    1, T 0, P     14, S  1, E  0, D     64, V  3
+N    2, T 0, P     12, S  1, E  0, D     62, V  3
+N    3, T 1, P      2, S  1, E  0, D     62, V  3
+C
+N    3, T 1, P      4, S  1, E  0, D     64, V  3
+N    0, T 0, P     18, S  1, E  0, D     68, V  3
+N    4, T 1, P      8, S  1, E  0, D     68, V  3
+N    5, T 1, P      6, S  1, E  0, D     66, V  3
+N    2, T 0, P     14, S  1, E  0, D     64, V  3
+N    1, T 0, P     16, S  1, E  0, D     66, V  3
+C
+N    1, T 0, P     18, S  1, E  0, D     68, V  3
+N    3, T 1, P      6, S  1, E  0, D     66, V  3
+N    0, T 0, P      0, S  1, E  0, D     70, V  3
+N    4, T 1, P     10, S  1, E  0, D     70, V  3
+N    5, T 1, P      8, S  1, E  0, D     68, V  3
+N    2, T 0, P     16, S  1, E  0, D     66, V  3
+C
+N    2, T 0, P     18, S  1, E  0, D     68, V  3
+N    1, T 0, P      0, S  1, E  0, D     70, V  3
+N    3, T 1, P      8, S  1, E  0, D     68, V  3
+N    0, T 0, P      2, S  1, E  0, D     72, V  3
+N    4, T 1, P     12, S  1, E  0, D     72, V  3
+N    5, T 1, P     10, S  1, E  0, D     70, V  3
+C
+N    5, T 1, P     12, S  1, E  0, D     72, V  3
+N    2, T 0, P      0, S  1, E  0, D     70, V  3
+N    1, T 0, P      2, S  1, E  0, D     72, V  3
+N    3, T 1, P     10, S  1, E  0, D     70, V  3
+N    0, T 0, P      4, S  1, E  0, D     74, V  3
+N    4, T 1, P     14, S  1, E  0, D     74, V  3
+C
+N    4, T 1, P     16, S  1, E  0, D     76, V  3
+N    5, T 1, P     14, S  1, E  0, D     74, V  3
+N    2, T 0, P      2, S  1, E  0, D     72, V  3
+N    1, T 0, P      4, S  1, E  0, D     74, V  3
+N    3, T 1, P     12, S  1, E  0, D     72, V  3
+N    0, T 0, P      6, S  1, E  0, D     76, V  3
+C
+N    0, T 0, P      8, S  1, E  0, D     78, V  3
+N    4, T 1, P     18, S  1, E  0, D     78, V  3
+N    5, T 1, P     16, S  1, E  0, D     76, V  3
+N    2, T 0, P      4, S  1, E  0, D     74, V  3
+N    1, T 0, P      6, S  1, E  0, D     76, V  3
+N    3, T 1, P     14, S  1, E  0, D     74, V  3
+C
+N    3, T 1, P     16, S  1, E  0, D     76, V  3
+N    0, T 0, P     10, S  1, E  0, D     80, V  4
+N    4, T 1, P      0, S  1, E  0, D     80, V  4
+N    5, T 1, P     18, S  1, E  0, D     78, V  3
+N    2, T 0, P      6, S  1, E  0, D     76, V  3
+N    1, T 0, P      8, S  1, E  0, D     78, V  3
+C
+N    1, T 0, P     10, S  1, E  0, D     80, V  4
+N    3, T 1, P     18, S  1, E  0, D     78, V  3
+N    0, T 0, P     12, S  1, E  0, D     82, V  4
+N    4, T 1, P      2, S  1, E  0, D     82, V  4
+N    5, T 1, P      0, S  1, E  0, D     80, V  4
+N    2, T 0, P      8, S  1, E  0, D     78, V  3
+C
+N    2, T 0, P     10, S  1, E  0, D     80, V  4
+N    1, T 0, P     12, S  1, E  0, D     82, V  4
+N    3, T 1, P      0, S  1, E  0, D     80, V  4
+N    0, T 0, P     14, S  1, E  0, D     84, V  4
+N    4, T 1, P      4, S  1, E  0, D     84, V  4
+N    5, T 1, P      2, S  1, E  0, D     82, V  4
+C
+N    5, T 1, P      4, S  1, E  0, D     84, V  4
+N    2, T 0, P     12, S  1, E  0, D     82, V  4
+N    1, T 0, P     14, S  1, E  0, D     84, V  4
+N    3, T 1, P      2, S  1, E  0, D     82, V  4
+N    0, T 0, P     16, S  1, E  0, D     86, V  4
+N    4, T 1, P      6, S  1, E  0, D     86, V  4
+C
+N    4, T 1, P      8, S  1, E  0, D     88, V  4
+N    5, T 1, P      6, S  1, E  0, D     86, V  4
+N    2, T 0, P     14, S  1, E  0, D     84, V  4
+N    3, T 1, P      4, S  1, E  0, D     84, V  4
+N    1, T 0, P     16, S  1, E  0, D     86, V  4
+N    0, T 0, P     18, S  1, E  0, D     88, V  4
+C
+N    0, T 0, P      0, S  1, E  0, D     90, V  4
+N    4, T 1, P     10, S  1, E  0, D     90, V  4
+N    5, T 1, P      8, S  1, E  0, D     88, V  4
+N    2, T 0, P     16, S  1, E  0, D     86, V  4
+N    3, T 1, P      6, S  1, E  0, D     86, V  4
+N    1, T 0, P     18, S  1, E  0, D     88, V  4
+C
+N    1, T 0, P      0, S  1, E  0, D     90, V  4
+N    0, T 0, P      2, S  1, E  0, D     92, V  4
+N    4, T 1, P     12, S  1, E  0, D     92, V  4
+N    5, T 1, P     10, S  1, E  0, D     90, V  4
+N    2, T 0, P     18, S  1, E  0, D     88, V  4
+N    3, T 1, P      8, S  1, E  0, D     88, V  4
+C
+N    3, T 1, P     10, S  1, E  0, D     90, V  4
+N    1, T 0, P      2, S  1, E  0, D     92, V  4
+N    0, T 0, P      4, S  1, E  0, D     94, V  4
+N    5, T 1, P     12, S  1, E  0, D     92, V  4
+N    4, T 1, P     14, S  1, E  0, D     94, V  4
+N    2, T 0, P      0, S  1, E  0, D     90, V  4
+C
+N    2, T 0, P      2, S  1, E  0, D     92, V  4
+N    3, T 1, P     12, S  1, E  0, D     92, V  4
+N    1, T 0, P      4, S  1, E  0, D     94, V  4
+N    0, T 0, P      6, S  1, E  0, D     96, V  4
+N    5, T 1, P     14, S  1, E  0, D     94, V  4
+N    4, T 1, P     16, S  1, E  0, D     96, V  4
+C
+N    4, T 1, P     18, S  1, E  0, D     98, V  4
+N    2, T 0, P      4, S  1, E  0, D     94, V  4
+N    3, T 1, P     14, S  1, E  0, D     94, V  4
+N    1, T 0, P      6, S  1, E  0, D     96, V  4
+N    0, T 0, P      8, S  1, E  0, D     98, V  4
+N    5, T 1, P     16, S  1, E  0, D     96, V  4
+C
+N    5, T 1, P     18, S  1, E  0, D     98, V  4
+N    4, T 1, P      0, S  1, E  0, D    100, V  5
+N    2, T 0, P      6, S  1, E  0, D     96, V  4
+N    3, T 1, P     16, S  1, E  0, D     96, V  4
+N    1, T 0, P      8, S  1, E  0, D     98, V  4
+N    0, T 0, P     10, S  1, E  0, D    100, V  5
+C
+N    0, T 0, P     12, S  1, E  0, D    102, V  5
+N    5, T 1, P      0, S  1, E  0, D    100, V  5
+N    4, T 1, P      2, S  1, E  0, D    102, V  5
+N    2, T 0, P      8, S  1, E  0, D     98, V  4
+N    3, T 1, P     18, S  1, E  0, D     98, V  4
+N    1, T 0, P     10, S  1, E  0, D    100, V  5
+C
+N    1, T 0, P     12, S  1, E  0, D    102, V  5
+N    0, T 0, P     14, S  1, E  0, D    104, V  5
+N    5, T 1, P      2, S  1, E  0, D    102, V  5
+N    4, T 1, P      4, S  1, E  0, D    104, V  5
+N    2, T 0, P     10, S  1, E  0, D    100, V  5
+N    3, T 1, P      0, S  1, E  0, D    100, V  5
+C
+N    3, T 1, P      2, S  1, E  0, D    102, V  5
+N    1, T 0, P     14, S  1, E  0, D    104, V  5
+N    0, T 0, P     16, S  1, E  0, D    106, V  5
+N    5, T 1, P      4, S  1, E  0, D    104, V  5
+N    4, T 1, P      6, S  1, E  0, D    106, V  5
+N    2, T 0, P     12, S  1, E  0, D    102, V  5
+C
+N    2, T 0, P     14, S  1, E  0, D    104, V  5
+N    3, T 1, P      4, S  1, E  0, D    104, V  5
+N    1, T 0, P     16, S  1, E  0, D    106, V  5
+N    0, T 0, P     18, S  1, E  0, D    108, V  5
+N    5, T 1, P      6, S  1, E  0, D    106, V  5
+N    4, T 1, P      8, S  1, E  0, D    108, V  5
+C
+N    4, T 1, P     10, S  1, E  0, D    110, V  5
+N    2, T 0, P     16, S  1, E  0, D    106, V  5
+N    3, T 1, P      6, S  1, E  0, D    106, V  5
+N    1, T 0, P     18, S  1, E  0, D    108, V  5
+N    0, T 0, P      0, S  1, E  0, D    110, V  5
+N    5, T 1, P      8, S  1, E  0, D    108, V  5
+C
+N    5, T 1, P     10, S  1, E  0, D    110, V  5
+N    4, T 1, P     12, S  1, E  0, D    112, V  5
+N    2, T 0, P     18, S  1, E  0, D    108, V  5
+N    3, T 1, P      8, S  1, E  0, D    108, V  5
+N    1, T 0, P      0, S  1, E  0, D    110, V  5
+N    0, T 0, P      2, S  1, E  0, D    112, V  5
+C
+N    0, T 0, P      4, S  1, E  0, D    114, V  5
+N    5, T 1, P     12, S  1, E  0, D    112, V  5
+N    4, T 1, P     14, S  1, E  0, D    114, V  5
+N    1, T 0, P      2, S  1, E  0, D    112, V  5
+N    2, T 0, P      0, S  1, E  0, D    110, V  5
+N    3, T 1, P     10, S  1, E  0, D    110, V  5
+C
+N    3, T 1, P     12, S  1, E  0, D    112, V  5
+N    0, T 0, P      6, S  1, E  0, D    116, V  5
+N    5, T 1, P     14, S  1, E  0, D    114, V  5
+N    1, T 0, P      4, S  1, E  0, D    114, V  5
+N    4, T 1, P     16, S  1, E  0, D    116, V  5
+N    2, T 0, P      2, S  1, E  0, D    112, V  5
+C
+N    2, T 0, P      4, S  1, E  0, D    114, V  5
+N    3, T 1, P     14, S  1, E  0, D    114, V  5
+N    0, T 0, P      8, S  1, E  0, D    118, V  5
+N    5, T 1, P     16, S  1, E  0, D    116, V  5
+N    1, T 0, P      6, S  1, E  0, D    116, V  5
+N    4, T 1, P     18, S  1, E  0, D    118, V  5
+C
+N    4, T 1, P      0, S  1, E  0, D    120, V  6
+N    2, T 0, P      6, S  1, E  0, D    116, V  5
+N    3, T 1, P     16, S  1, E  0, D    116, V  5
+N    0, T 0, P     10, S  1, E  0, D    120, V  6
+N    5, T 1, P     18, S  1, E  0, D    118, V  5
+N    1, T 0, P      8, S  1, E  0, D    118, V  5
+C
+N    1, T 0, P     10, S  1, E  0, D    120, V  6
+N    4, T 1, P      2, S  1, E  0, D    122, V  6
+N    2, T 0, P      8, S  1, E  0, D    118, V  5
+N    3, T 1, P     18, S  1, E  0, D    118, V  5
+N    0, T 0, P     12, S  1, E  0, D    122, V  6
+N    5, T 1, P      0, S  1, E  0, D    120, V  6
+C
+N    5, T 1, P      2, S  1, E  0, D    122, V  6
+N    1, T 0, P     12, S  1, E  0, D    122, V  6
+N    4, T 1, P      4, S  1, E  0, D    124, V  6
+N    3, T 1, P      0, S  1, E  0, D    120, V  6
+N    2, T 0, P     10, S  1, E  0, D    120, V  6
+N    0, T 0, P     14, S  1, E  0, D    124, V  6
+C
+N    0, T 0, P     16, S  1, E  0, D    126, V  6
+N    5, T 1, P      4, S  1, E  0, D    124, V  6
+N    1, T 0, P     14, S  1, E  0, D    124, V  6
+N    4, T 1, P      6, S  1, E  0, D    126, V  6
+N    3, T 1, P      2, S  1, E  0, D    122, V  6
+N    2, T 0, P     12, S  1, E  0, D    122, V  6
+C
+N    2, T 0, P     14, S  1, E  0, D    124, V  6
+N    0, T 0, P     18, S  1, E  0, D    128, V  6
+N    5, T 1, P      6, S  1, E  0, D    126, V  6
+N    1, T 0, P     16, S  1, E  0, D    126, V  6
+N    4, T 1, P      8, S  1, E  0, D    128, V  6
+N    3, T 1, P      4, S  1, E  0, D    124, V  6
+C
+N    3, T 1, P      6, S  1, E  0, D    126, V  6
+N    2, T 0, P     16, S  1, E  0, D    126, V  6
+N    0, T 0, P      0, S  1, E  0, D    130, V  6
+N    5, T 1, P      8, S  1, E  0, D    128, V  6
+N    1, T 0, P     18, S  1, E  0, D    128, V  6
+N    4, T 1, P     10, S  1, E  0, D    130, V  6
+C
+N    4, T 1, P     12, S  1, E  0, D    132, V  6
+N    3, T 1, P      8, S  1, E  0, D    128, V  6
+N    2, T 0, P     18, S  1, E  0, D    128, V  6
+N    0, T 0, P      2, S  1, E  0, D    132, V  6
+N    1, T 0, P      0, S  1, E  0, D    130, V  6
+N    5, T 1, P     10, S  1, E  0, D    130, V  6
+C
+N    5, T 1, P     12, S  1, E  0, D    132, V  6
+N    4, T 1, P     14, S  1, E  0, D    134, V  6
+N    3, T 1, P     10, S  1, E  0, D    130, V  6
+N    2, T 0, P      0, S  1, E  0, D    130, V  6
+N    0, T 0, P      4, S  1, E  0, D    134, V  6
+N    1, T 0, P      2, S  1, E  0, D    132, V  6
+C
+N    1, T 0, P      4, S  1, E  0, D    134, V  6
+N    5, T 1, P     14, S  1, E  0, D    134, V  6
+N    4, T 1, P     16, S  1, E  0, D    136, V  6
+N    3, T 1, P     12, S  1, E  0, D    132, V  6
+N    2, T 0, P      2, S  1, E  0, D    132, V  6
+N    0, T 0, P      6, S  1, E  0, D    136, V  6
+C
+N    0, T 0, P      8, S  1, E  0, D    138, V  6
+N    1, T 0, P      6, S  1, E  0, D    136, V  6
+N    5, T 1, P     16, S  1, E  0, D    136, V  6
+N    4, T 1, P     18, S  1, E  0, D    138, V  6
+N    2, T 0, P      4, S  1, E  0, D    134, V  6
+N    3, T 1, P     14, S  1, E  0, D    134, V  6
+C
+N    3, T 1, P     16, S  1, E  0, D    136, V  6
+N    0, T 0, P     10, S  1, E  0, D    140, V  7
+N    1, T 0, P      8, S  1, E  0, D    138, V  6
+N    5, T 1, P     18, S  1, E  0, D    138, V  6
+N    4, T 1, P      0, S  1, E  0, D    140, V  7
+N    2, T 0, P      6, S  1, E  0, D    136, V  6
+C
+N    2, T 0, P      8, S  1, E  0, D    138, V  6
+N    3, T 1, P     18, S  1, E  0, D    138, V  6
+N    1, T 0, P     10, S  1, E  0, D    140, V  7
+N    0, T 0, P     12, S  1, E  0, D    142, V  7
+N    5, T 1, P      0, S  1, E  0, D    140, V  7
+N    4, T 1, P      2, S  1, E  0, D    142, V  7
+C
+N    4, T 1, P      4, S  1, E  0, D    144, V  7
+N    2, T 0, P     10, S  1, E  0, D    140, V  7
+N    3, T 1, P      0, S  1, E  0, D    140, V  7
+N    1, T 0, P     12, S  1, E  0, D    142, V  7
+N    0, T 0, P     14, S  1, E  0, D    144, V  7
+N    5, T 1, P      2, S  1, E  0, D    142, V  7
+C
+N    5, T 1, P      4, S  1, E  0, D    144, V  7
+N    4, T 1, P      6, S  1, E  0, D    146, V  7
+N    2, T 0, P     12, S  1, E  0, D    142, V  7
+N    3, T 1, P      2, S  1, E  0, D    142, V  7
+N    1, T 0, P     14, S  1, E  0, D    144, V  7
+N    0, T 0, P     16, S  1, E  0, D    146, V  7
+C
+N    0, T 0, P     18, S  1, E  0, D    148, V  7
+N    5, T 1, P      6, S  1, E  0, D    146, V  7
+N    4, T 1, P      8, S  1, E  0, D    148, V  7
+N    2, T 0, P     14, S  1, E  0, D    144, V  7
+N    3, T 1, P      4, S  1, E  0, D    144, V  7
+N    1, T 0, P     16, S  1, E  0, D    146, V  7
+C
+N    1, T 0, P     18, S  1, E  0, D    148, V  7
+N    0, T 0, P      0, S  1, E  0, D    150, V  7
+N    5, T 1, P      8, S  1, E  0, D    148, V  7
+N    4, T 1, P     10, S  1, E  0, D    150, V  7
+N    2, T 0, P     16, S  1, E  0, D    146, V  7
+N    3, T 1, P      6, S  1, E  0, D    146, V  7
+C
+N    3, T 1, P      8, S  1, E  0, D    148, V  7
+N    1, T 0, P      0, S  1, E  0, D    150, V  7
+N    0, T 0, P      2, S  1, E  0, D    152, V  7
+N    5, T 1, P     10, S  1, E  0, D    150, V  7
+N    4, T 1, P     12, S  1, E  0, D    152, V  7
+N    2, T 0, P     18, S  1, E  0, D    148, V  7
+C
+N    2, T 0, P      0, S  1, E  0, D    150, V  7
+N    3, T 1, P     10, S  1, E  0, D    150, V  7
+N    1, T 0, P      2, S  1, E  0, D    152, V  7
+N    0, T 0, P      4, S  1, E  0, D    154, V  7
+N    5, T 1, P     12, S  1, E  0, D    152, V  7
+N    4, T 1, P     14, S  1, E  0, D    154, V  7
+C
+N    4, T 1, P     16, S  1, E  0, D    156, V  7
+N    2, T 0, P      2, S  1, E  0, D    152, V  7
+N    3, T 1, P     12, S  1, E  0, D    152, V  7
+N    1, T 0, P      4, S  1, E  0, D    154, V  7
+N    0, T 0, P      6, S  1, E  0, D    156, V  7
+N    5, T 1, P     14, S  1, E  0, D    154, V  7
+C
+N    5, T 1, P     16, S  1, E  0, D    156, V  7
+N    4, T 1, P     18, S  1, E  0, D    158, V  7
+N    2, T 0, P      4, S  1, E  0, D    154, V  7
+N    3, T 1, P     14, S  1, E  0, D    154, V  7
+N    1, T 0, P      6, S  1, E  0, D    156, V  7
+N    0, T 0, P      8, S  1, E  0, D    158, V  7
+C
+N    0, T 0, P     10, S  1, E  0, D    160, V  8
+N    5, T 1, P     18, S  1, E  0, D    158, V  7
+N    4, T 1, P      0, S  1, E  0, D    160, V  8
+N    3, T 1, P     16, S  1, E  0, D    156, V  7
+N    2, T 0, P      6, S  1, E  0, D    156, V  7
+N    1, T 0, P      8, S  1, E  0, D    158, V  7
+C
+N    1, T 0, P     10, S  1, E  0, D    160, V  8
+N    0, T 0, P     12, S  1, E  0, D    162, V  8
+N    5, T 1, P      0, S  1, E  0, D    160, V  8
+N    3, T 1, P     18, S  1, E  0, D    158, V  7
+N    4, T 1, P      2, S  1, E  0, D    162, V  8
+N    2, T 0, P      8, S  1, E  0, D    158, V  7
+C
+N    2, T 0, P     10, S  1, E  0, D    160, V  8
+N    1, T 0, P     12, S  1, E  0, D    162, V  8
+N    0, T 0, P     14, S  1, E  0, D    164, V  8
+N    4, T 1, P      4, S  1, E  0, D    164, V  8
+N    5, T 1, P      2, S  1, E  0, D    162, V  8
+N    3, T 1, P      0, S  1, E  0, D    160, V  8
+C
+N    3, T 1, P      2, S  1, E  0, D    162, V  8
+N    2, T 0, P     12, S  1, E  0, D    162, V  8
+N    1, T 0, P     14, S  1, E  0, D    164, V  8
+N    0, T 0, P     16, S  1, E  0, D    166, V  8
+N    4, T 1, P      6, S  1, E  0, D    166, V  8
+N    5, T 1, P      4, S  1, E  0, D    164, V  8
+C
+N    5, T 1, P      6, S  1, E  0, D    166, V  8
+N    3, T 1, P      4, S  1, E  0, D    164, V  8
+N    2, T 0, P     14, S  1, E  0, D    164, V  8
+N    1, T 0, P     16, S  1, E  0, D    166, V  8
+N    0, T 0, P     18, S  1, E  0, D    168, V  8
+N    4, T 1, P      8, S  1, E  0, D    168, V  8
+C
+N    4, T 1, P     10, S  1, E  0, D    170, V  8
+N    5, T 1, P      8, S  1, E  0, D    168, V  8
+N    3, T 1, P      6, S  1, E  0, D    166, V  8
+N    2, T 0, P     16, S  1, E  0, D    166, V  8
+N    1, T 0, P     18, S  1, E  0, D    168, V  8
+N    0, T 0, P      0, S  1, E  0, D    170, V  8
+C
+N    0, T 0, P      2, S  1, E  0, D    172, V  8
+N    4, T 1, P     12, S  1, E  0, D    172, V  8
+N    5, T 1, P     10, S  1, E  0, D    170, V  8
+N    3, T 1, P      8, S  1, E  0, D    168, V  8
+N    2, T 0, P     18, S  1, E  0, D    168, V  8
+N    1, T 0, P      0, S  1, E  0, D    170, V  8
+C
+N    1, T 0, P      2, S  1, E  0, D    172, V  8
+N    0, T 0, P      4, S  1, E  0, D    174, V  8
+N    4, T 1, P     14, S  1, E  0, D    174, V  8
+N    5, T 1, P     12, S  1, E  0, D    172, V  8
+N    3, T 1, P     10, S  1, E  0, D    170, V  8
+N    2, T 0, P      0, S  1, E  0, D    170, V  8
+C
+N    2, T 0, P      2, S  1, E  0, D    172, V  8
+N    1, T 0, P      4, S  1, E  0, D    174, V  8
+N    0, T 0, P      6, S  1, E  0, D    176, V  8
+N    4, T 1, P     16, S  1, E  0, D    176, V  8
+N    3, T 1, P     12, S  1, E  0, D    172, V  8
+N    5, T 1, P     14, S  1, E  0, D    174, V  8
+C
+N    5, T 1, P     16, S  1, E  0, D    176, V  8
+N    2, T 0, P      4, S  1, E  0, D    174, V  8
+N    1, T 0, P      6, S  1, E  0, D    176, V  8
+N    0, T 0, P      8, S  1, E  0, D    178, V  8
+N    4, T 1, P     18, S  1, E  0, D    178, V  8
+N    3, T 1, P     14, S  1, E  0, D    174, V  8
+C
+N    3, T 1, P     16, S  1, E  0, D    176, V  8
+N    5, T 1, P     18, S  1, E  0, D    178, V  8
+N    2, T 0, P      6, S  1, E  0, D    176, V  8
+N    1, T 0, P      8, S  1, E  0, D    178, V  8
+N    0, T 0, P     10, S  1, E  0, D    180, V  9
+N    4, T 1, P      0, S  1, E  0, D    180, V  9
+C
+N    4, T 1, P      2, S  1, E  0, D    182, V  9
+N    3, T 1, P     18, S  1, E  0, D    178, V  8
+N    5, T 1, P      0, S  1, E  0, D    180, V  9
+N    2, T 0, P      8, S  1, E  0, D    178, V  8
+N    1, T 0, P     10, S  1, E  0, D    180, V  9
+N    0, T 0, P     12, S  1, E  0, D    182, V  9
+C
+N    0, T 0, P     14, S  1, E  0, D    184, V  9
+N    4, T 1, P      4, S  1, E  0, D    184, V  9
+N    3, T 1, P      0, S  1, E  0, D    180, V  9
+N    5, T 1, P      2, S  1, E  0, D    182, V  9
+N    2, T 0, P     10, S  1, E  0, D    180, V  9
+N    1, T 0, P     12, S  1, E  0, D    182, V  9
+C
+N    1, T 0, P     14, S  1, E  0, D    184, V  9
+N    0, T 0, P     16, S  1, E  0, D    186, V  9
+N    4, T 1, P      6, S  1, E  0, D    186, V  9
+N    3, T 1, P      2, S  1, E  0, D    182, V  9
+N    5, T 1, P      4, S  1, E  0, D    184, V  9
+N    2, T 0, P     12, S  1, E  0, D    182, V  9
+C
+N    2, T 0, P     14, S  1, E  0, D    184, V  9
+N    1, T 0, P     16, S  1, E  0, D    186, V  9
+N    0, T 0, P     18, S  1, E  0, D    188, V  9
+N    4, T 1, P      8, S  1, E  0, D    188, V  9
+N    5, T 1, P      6, S  1, E  0, D    186, V  9
+N    3, T 1, P      4, S  1, E  0, D    184, V  9
+C
+N    3, T 1, P      6, S  1, E  0, D    186, V  9
+N    2, T 0, P     16, S  1, E  0, D    186, V  9
+N    1, T 0, P     18, S  1, E  0, D    188, V  9
+N    0, T 0, P      0, S  1, E  0, D    190, V  9
+N    5, T 1, P      8, S  1, E  0, D    188, V  9
+N    4, T 1, P     10, S  1, E  0, D    190, V  9
+C
+N    4, T 1, P     12, S  1, E  0, D    192, V  9
+N    3, T 1, P      8, S  1, E  0, D    188, V  9
+N    2, T 0, P     18, S  1, E  0, D    188, V  9
+N    1, T 0, P      0, S  1, E  0, D    190, V  9
+N    0, T 0, P      2, S  1, E  0, D    192, V  9
+N    5, T 1, P     10, S  1, E  0, D    190, V  9
+C
+N    5, T 1, P     12, S  1, E  0, D    192, V  9
+N    4, T 1, P     14, S  1, E  0, D    194, V  9
+N    3, T 1, P     10, S  1, E  0, D    190, V  9
+N    2, T 0, P      0, S  1, E  0, D    190, V  9
+N    1, T 0, P      2, S  1, E  0, D    192, V  9
+N    0, T 0, P      4, S  1, E  0, D    194, V  9
+C
+N    0, T 0, P      6, S  1, E  0, D    196, V  9
+N    5, T 1, P     14, S  1, E  0, D    194, V  9
+N    4, T 1, P     16, S  1, E  0, D    196, V  9
+N    3, T 1, P     12, S  1, E  0, D    192, V  9
+N    2, T 0, P      2, S  1, E  0, D    192, V  9
+N    1, T 0, P      4, S  1, E  0, D    194, V  9
+C
+N    1, T 0, P      6, S  1, E  0, D    196, V  9
+N    0, T 0, P      8, S  1, E  0, D    198, V  9
+N    5, T 1, P     16, S  1, E  0, D    196, V  9
+N    4, T 1, P     18, S  1, E  0, D    198, V  9
+N    3, T 1, P     14, S  1, E  0, D    194, V  9
+N    2, T 0, P      4, S  1, E  0, D    194, V  9
+C
+N    2, T 0, P      6, S  1, E  0, D    196, V  9
+N    1, T 0, P      8, S  1, E  0, D    198, V  9
+N    0, T 0, P     10, S  1, E  0, D    200, V 10
+N    5, T 1, P     18, S  1, E  0, D    198, V  9
+N    4, T 1, P      0, S  1, E  0, D    200, V 10
+N    3, T 1, P     16, S  1, E  0, D    196, V  9
+C
+N    3, T 1, P     18, S  1, E  0, D    198, V  9
+N    2, T 0, P      8, S  1, E  0, D    198, V  9
+N    1, T 0, P     10, S  1, E  0, D    200, V 10
+N    0, T 0, P     12, S  1, E  0, D    202, V 10
+N    4, T 1, P      2, S  1, E  0, D    202, V 10
+N    5, T 1, P      0, S  1, E  0, D    200, V 10
+C
+N    5, T 1, P      2, S  1, E  0, D    202, V 10
+N    3, T 1, P      0, S  1, E  0, D    200, V 10
+N    2, T 0, P     10, S  1, E  0, D    200, V 10
+N    1, T 0, P     12, S  1, E  0, D    202, V 10
+N    0, T 0, P     14, S  1, E  0, D    204, V 10
+N    4, T 1, P      4, S  1, E  0, D    204, V 10
+C
+N    4, T 1, P      6, S  1, E  0, D    206, V 10
+N    5, T 1, P      4, S  1, E  0, D    204, V 10
+N    3, T 1, P      2, S  1, E  0, D    202, V 10
+N    2, T 0, P     12, S  1, E  0, D    202, V 10
+N    0, T 0, P     16, S  1, E  0, D    206, V 10
+N    1, T 0, P     14, S  1, E  0, D    204, V 10
+C
+N    1, T 0, P     16, S  1, E  0, D    206, V 10
+N    4, T 1, P      8, S  1, E  0, D    208, V 10
+N    5, T 1, P      6, S  1, E  0, D    206, V 10
+N    2, T 0, P     14, S  1, E  0, D    204, V 10
+N    3, T 1, P      4, S  1, E  0, D    204, V 10
+N    0, T 0, P     18, S  1, E  0, D    208, V 10
+C
+N    0, T 0, P      0, S  1, E  0, D    210, V 10
+N    1, T 0, P     18, S  1, E  0, D    208, V 10
+N    4, T 1, P     10, S  1, E  0, D    210, V 10
+N    5, T 1, P      8, S  1, E  0, D    208, V 10
+N    2, T 0, P     16, S  1, E  0, D    206, V 10
+N    3, T 1, P      6, S  1, E  0, D    206, V 10
+C
+N    3, T 1, P      8, S  1, E  0, D    208, V 10
+N    0, T 0, P      2, S  1, E  0, D    212, V 10
+N    1, T 0, P      0, S  1, E  0, D    210, V 10
+N    4, T 1, P     12, S  1, E  0, D    212, V 10
+N    2, T 0, P     18, S  1, E  0, D    208, V 10
+N    5, T 1, P     10, S  1, E  0, D    210, V 10
+C
+N    5, T 1, P     12, S  1, E  0, D    212, V 10
+N    3, T 1, P     10, S  1, E  0, D    210, V 10
+N    0, T 0, P      4, S  1, E  0, D    214, V 10
+N    1, T 0, P      2, S  1, E  0, D    212, V 10
+N    4, T 1, P     14, S  1, E  0, D    214, V 10
+N    2, T 0, P      0, S  1, E  0, D    210, V 10
+C
+N    2, T 0, P      2, S  1, E  0, D    212, V 10
+N    5, T 1, P     14, S  1, E  0, D    214, V 10
+N    3, T 1, P     12, S  1, E  0, D    212, V 10
+N    0, T 0, P      6, S  1, E  0, D    216, V 10
+N    1, T 0, P      4, S  1, E  0, D    214, V 10
+N    4, T 1, P     16, S  1, E  0, D    216, V 10
+C
+N    4, T 1, P     18, S  1, E  0, D    218, V 10
+N    2, T 0, P      4, S  1, E  0, D    214, V 10
+N    5, T 1, P     16, S  1, E  0, D    216, V 10
+N    3, T 1, P     14, S  1, E  0, D    214, V 10
+N    0, T 0, P      8, S  1, E  0, D    218, V 10
+N    1, T 0, P      6, S  1, E  0, D    216, V 10
+C
+N    1, T 0, P      8, S  1, E  0, D    218, V 10
+N    4, T 1, P      0, S  1, E  0, D    220, V 11
+N    5, T 1, P     18, S  1, E  0, D    218, V 10
+N    2, T 0, P      6, S  1, E  0, D    216, V 10
+N    3, T 1, P     16, S  1, E  0, D    216, V 10
+N    0, T 0, P     10, S  1, E  0, D    220, V 11
+C
+N    0, T 0, P     12, S  1, E  0, D    222, V 11
+N    1, T 0, P     10, S  1, E  0, D    220, V 11
+N    4, T 1, P      2, S  1, E  0, D    222, V 11
+N    5, T 1, P      0, S  1, E  0, D    220, V 11
+N    2, T 0, P      8, S  1, E  0, D    218, V 10
+N    3, T 1, P     18, S  1, E  0, D    218, V 10
+C
+N    3, T 1, P      0, S  1, E  0, D    220, V 11
+N    0, T 0, P     14, S  1, E  0, D    224, V 11
+N    1, T 0, P     12, S  1, E  0, D    222, V 11
+N    4, T 1, P      4, S  1, E  0, D    224, V 11
+N    5, T 1, P      2, S  1, E  0, D    222, V 11
+N    2, T 0, P     10, S  1, E  0, D    220, V 11
+C
+N    2, T 0, P     12, S  1, E  0, D    222, V 11
+N    3, T 1, P      2, S  1, E  0, D    222, V 11
+N    0, T 0, P     16, S  1, E  0, D    226, V 11
+N    1, T 0, P     14, S  1, E  0, D    224, V 11
+N    4, T 1, P      6, S  1, E  0, D    226, V 11
+N    5, T 1, P      4, S  1, E  0, D    224, V 11
+C
+N    5, T 1, P      6, S  1, E  0, D    226, V 11
+N    2, T 0, P     14, S  1, E  0, D    224, V 11
+N    3, T 1, P      4, S  1, E  0, D    224, V 11
+N    1, T 0, P     16, S  1, E  0, D    226, V 11
+N    0, T 0, P     18, S  1, E  0, D    228, V 11
+N    4, T 1, P      8, S  1, E  0, D    228, V 11
+C
+N    4, T 1, P     10, S  1, E  0, D    230, V 11
+N    5, T 1, P      8, S  1, E  0, D    228, V 11
+N    2, T 0, P     16, S  1, E  0, D    226, V 11
+N    3, T 1, P      6, S  1, E  0, D    226, V 11
+N    1, T 0, P     18, S  1, E  0, D    228, V 11
+N    0, T 0, P      0, S  1, E  0, D    230, V 11
+C
+N    0, T 0, P      2, S  1, E  0, D    232, V 11
+N    4, T 1, P     12, S  1, E  0, D    232, V 11
+N    5, T 1, P     10, S  1, E  0, D    230, V 11
+N    3, T 1, P      8, S  1, E  0, D    228, V 11
+N    1, T 0, P      0, S  1, E  0, D    230, V 11
+N    2, T 0, P     18, S  1, E  0, D    228, V 11
+C
+N    2, T 0, P      0, S  1, E  0, D    230, V 11
+N    0, T 0, P      4, S  1, E  0, D    234, V 11
+N    4, T 1, P     14, S  1, E  0, D    234, V 11
+N    5, T 1, P     12, S  1, E  0, D    232, V 11
+N    3, T 1, P     10, S  1, E  0, D    230, V 11
+N    1, T 0, P      2, S  1, E  0, D    232, V 11
+C
+N    1, T 0, P      4, S  1, E  0, D    234, V 11
+N    2, T 0, P      2, S  1, E  0, D    232, V 11
+N    0, T 0, P      6, S  1, E  0, D    236, V 11
+N    4, T 1, P     16, S  1, E  0, D    236, V 11
+N    5, T 1, P     14, S  1, E  0, D    234, V 11
+N    3, T 1, P     12, S  1, E  0, D    232, V 11
+C
+N    3, T 1, P     14, S  1, E  0, D    234, V 11
+N    1, T 0, P      6, S  1, E  0, D    236, V 11
+N    2, T 0, P      4, S  1, E  0, D    234, V 11
+N    0, T 0, P      8, S  1, E  0, D    238, V 11
+N    4, T 1, P     18, S  1, E  0, D    238, V 11
+N    5, T 1, P     16, S  1, E  0, D    236, V 11
+C
+N    5, T 1, P     18, S  1, E  0, D    238, V 11
+N    3, T 1, P     16, S  1, E  0, D    236, V 11
+N    1, T 0, P      8, S  1, E  0, D    238, V 11
+N    2, T 0, P      6, S  1, E  0, D    236, V 11
+N    0, T 0, P     10, S  1, E  0, D    240, V 12
+N    4, T 1, P      0, S  1, E  0, D    240, V 12
+C
+N    4, T 1, P      2, S  1, E  0, D    242, V 12
+N    5, T 1, P      0, S  1, E  0, D    240, V 12
+N    3, T 1, P     18, S  1, E  0, D    238, V 11
+N    1, T 0, P     10, S  1, E  0, D    240, V 12
+N    2, T 0, P      8, S  1, E  0, D    238, V 11
+N    0, T 0, P     12, S  1, E  0, D    242, V 12
+C
+N    0, T 0, P     14, S  1, E  0, D    244, V 12
+N    4, T 1, P      4, S  1, E  0, D    244, V 12
+N    5, T 1, P      2, S  1, E  0, D    242, V 12
+N    3, T 1, P      0, S  1, E  0, D    240, V 12
+N    2, T 0, P     10, S  1, E  0, D    240, V 12
+N    1, T 0, P     12, S  1, E  0, D    242, V 12
+C
+N    1, T 0, P     14, S  1, E  0, D    244, V 12
+N    0, T 0, P     16, S  1, E  0, D    246, V 12
+N    4, T 1, P      6, S  1, E  0, D    246, V 12
+N    5, T 1, P      4, S  1, E  0, D    244, V 12
+N    3, T 1, P      2, S  1, E  0, D    242, V 12
+N    2, T 0, P     12, S  1, E  0, D    242, V 12
+C
+N    2, T 0, P     14, S  1, E  0, D    244, V 12
+N    1, T 0, P     16, S  1, E  0, D    246, V 12
+N    0, T 0, P     18, S  1, E  0, D    248, V 12
+N    4, T 1, P      8, S  1, E  0, D    248, V 12
+N    5, T 1, P      6, S  1, E  0, D    246, V 12
+N    3, T 1, P      4, S  1, E  0, D    244, V 12
+C
+N    3, T 1, P      6, S  1, E  0, D    246, V 12
+N    2, T 0, P     16, S  1, E  0, D    246, V 12
+N    1, T 0, P     18, S  1, E  0, D    248, V 12
+N    0, T 0, P      0, S  1, E  0, D    250, V 12
+N    4, T 1, P     10, S  1, E  0, D    250, V 12
+N    5, T 1, P      8, S  1, E  0, D    248, V 12
+C
+N    5, T 1, P     10, S  1, E  0, D    250, V 12
+N    3, T 1, P      8, S  1, E  0, D    248, V 12
+N    2, T 0, P     18, S  1, E  0, D    248, V 12
+N    1, T 0, P      0, S  1, E  0, D    250, V 12
+N    0, T 0, P      2, S  1, E  0, D    252, V 12
+N    4, T 1, P     12, S  1, E  0, D    252, V 12
+C
+N    4, T 1, P     14, S  1, E  0, D    254, V 12
+N    5, T 1, P     12, S  1, E  0, D    252, V 12
+N    3, T 1, P     10, S  1, E  0, D    250, V 12
+N    2, T 0, P      0, S  1, E  0, D    250, V 12
+N    1, T 0, P      2, S  1, E  0, D    252, V 12
+N    0, T 0, P      4, S  1, E  0, D    254, V 12
+C
+N    0, T 0, P      6, S  1, E  0, D    256, V 12
+N    4, T 1, P     16, S  1, E  0, D    256, V 12
+N    5, T 1, P     14, S  1, E  0, D    254, V 12
+N    3, T 1, P     12, S  1, E  0, D    252, V 12
+N    2, T 0, P      2, S  1, E  0, D    252, V 12
+N    1, T 0, P      4, S  1, E  0, D    254, V 12
+C
+N    1, T 0, P      6, S  1, E  0, D    256, V 12
+N    0, T 0, P      8, S  1, E  0, D    258, V 12
+N    4, T 1, P     18, S  1, E  0, D    258, V 12
+N    5, T 1, P     16, S  1, E  0, D    256, V 12
+N    3, T 1, P     14, S  1, E  0, D    254, V 12
+N    2, T 0, P      4, S  1, E  0, D    254, V 12
+C
+N    2, T 0, P      6, S  1, E  0, D    256, V 12
+N    1, T 0, P      8, S  1, E  0, D    258, V 12
+N    0, T 0, P     10, S  1, E  0, D    260, V 13
+N    4, T 1, P      0, S  1, E  0, D    260, V 13
+N    5, T 1, P     18, S  1, E  0, D    258, V 12
+N    3, T 1, P     16, S  1, E  0, D    256, V 12
+C
+N    3, T 1, P     18, S  1, E  0, D    258, V 12
+N    2, T 0, P      8, S  1, E  0, D    258, V 12
+N    1, T 0, P     10, S  1, E  0, D    260, V 13
+N    0, T 0, P     12, S  1, E  0, D    262, V 13
+N    4, T 1, P      2, S  1, E  0, D    262, V 13
+N    5, T 1, P      0, S  1, E  0, D    260, V 13
+C
+N    5, T 1, P      2, S  1, E  0, D    262, V 13
+N    3, T 1, P      0, S  1, E  0, D    260, V 13
+N    2, T 0, P     10, S  1, E  0, D    260, V 13
+N    1, T 0, P     12, S  1, E  0, D    262, V 13
+N    0, T 0, P     14, S  1, E  0, D    264, V 13
+N    4, T 1, P      4, S  1, E  0, D    264, V 13
+C
+N    4, T 1, P      6, S  1, E  0, D    266, V 13
+N    5, T 1, P      4, S  1, E  0, D    264, V 13
+N    3, T 1, P      2, S  1, E  0, D    262, V 13
+N    2, T 0, P     12, S  1, E  0, D    262, V 13
+N    1, T 0, P     14, S  1, E  0, D    264, V 13
+N    0, T 0, P     16, S  1, E  0, D    266, V 13
+C
+N    0, T 0, P     18, S  1, E  0, D    268, V 13
+N    4, T 1, P      8, S  1, E  0, D    268, V 13
+N    5, T 1, P      6, S  1, E  0, D    266, V 13
+N    2, T 0, P     14, S  1, E  0, D    264, V 13
+N    3, T 1, P      4, S  1, E  0, D    264, V 13
+N    1, T 0, P     16, S  1, E  0, D    266, V 13
+C
+N    1, T 0, P     18, S  1, E  0, D    268, V 13
+N    0, T 0, P      0, S  1, E  0, D    270, V 13
+N    4, T 1, P     10, S  1, E  0, D    270, V 13
+N    5, T 1, P      8, S  1, E  0, D    268, V 13
+N    2, T 0, P     16, S  1, E  0, D    266, V 13
+N    3, T 1, P      6, S  1, E  0, D    266, V 13
+C
+N    3, T 1, P      8, S  1, E  0, D    268, V 13
+N    1, T 0, P      0, S  1, E  0, D    270, V 13
+N    4, T 1, P     12, S  1, E  0, D    272, V 13
+N    0, T 0, P      2, S  1, E  0, D    272, V 13
+N    2, T 0, P     18, S  1, E  0, D    268, V 13
+N    5, T 1, P     10, S  1, E  0, D    270, V 13
+C
+N    5, T 1, P     12, S  1, E  0, D    272, V 13
+N    3, T 1, P     10, S  1, E  0, D    270, V 13
+N    1, T 0, P      2, S  1, E  0, D    272, V 13
+N    4, T 1, P     14, S  1, E  0, D    274, V 13
+N    0, T 0, P      4, S  1, E  0, D    274, V 13
+N    2, T 0, P      0, S  1, E  0, D    270, V 13
+C
+N    2, T 0, P      2, S  1, E  0, D    272, V 13
+N    5, T 1, P     14, S  1, E  0, D    274, V 13
+N    3, T 1, P     12, S  1, E  0, D    272, V 13
+N    1, T 0, P      4, S  1, E  0, D    274, V 13
+N    4, T 1, P     16, S  1, E  0, D    276, V 13
+N    0, T 0, P      6, S  1, E  0, D    276, V 13
+C
+N    0, T 0, P      8, S  1, E  0, D    278, V 13
+N    2, T 0, P      4, S  1, E  0, D    274, V 13
+N    5, T 1, P     16, S  1, E  0, D    276, V 13
+N    3, T 1, P     14, S  1, E  0, D    274, V 13
+N    1, T 0, P      6, S  1, E  0, D    276, V 13
+N    4, T 1, P     18, S  1, E  0, D    278, V 13
+C
+N    4, T 1, P      0, S  1, E  0, D    280, V 14
+N    0, T 0, P     10, S  1, E  0, D    280, V 14
+N    2, T 0, P      6, S  1, E  0, D    276, V 13
+N    5, T 1, P     18, S  1, E  0, D    278, V 13
+N    3, T 1, P     16, S  1, E  0, D    276, V 13
+N    1, T 0, P      8, S  1, E  0, D    278, V 13
+C
+N    1, T 0, P     10, S  1, E  0, D    280, V 14
+N    4, T 1, P      2, S  1, E  0, D    282, V 14
+N    0, T 0, P     12, S  1, E  0, D    282, V 14
+N    2, T 0, P      8, S  1, E  0, D    278, V 13
+N    5, T 1, P      0, S  1, E  0, D    280, V 14
+N    3, T 1, P     18, S  1, E  0, D    278, V 13
+C
+N    3, T 1, P      0, S  1, E  0, D    280, V 14
+N    1, T 0, P     12, S  1, E  0, D    282, V 14
+N    4, T 1, P      4, S  1, E  0, D    284, V 14
+N    0, T 0, P     14, S  1, E  0, D    284, V 14
+N    2, T 0, P     10, S  1, E  0, D    280, V 14
+N    5, T 1, P      2, S  1, E  0, D    282, V 14
+C
+N    5, T 1, P      4, S  1, E  0, D    284, V 14
+N    3, T 1, P      2, S  1, E  0, D    282, V 14
+N    1, T 0, P     14, S  1, E  0, D    284, V 14
+N    4, T 1, P      6, S  1, E  0, D    286, V 14
+N    0, T 0, P     16, S  1, E  0, D    286, V 14
+N    2, T 0, P     12, S  1, E  0, D    282, V 14
+C
+N    2, T 0, P     14, S  1, E  0, D    284, V 14
+N    5, T 1, P      6, S  1, E  0, D    286, V 14
+N    3, T 1, P      4, S  1, E  0, D    284, V 14
+N    1, T 0, P     16, S  1, E  0, D    286, V 14
+N    4, T 1, P      8, S  1, E  0, D    288, V 14
+N    0, T 0, P     18, S  1, E  0, D    288, V 14
+C
+N    0, T 0, P      0, S  1, E  0, D    290, V 14
+N    2, T 0, P     16, S  1, E  0, D    286, V 14
+N    5, T 1, P      8, S  1, E  0, D    288, V 14
+N    3, T 1, P      6, S  1, E  0, D    286, V 14
+N    1, T 0, P     18, S  1, E  0, D    288, V 14
+N    4, T 1, P     10, S  1, E  0, D    290, V 14
+C
+N    4, T 1, P     12, S  1, E  0, D    292, V 14
+N    0, T 0, P      2, S  1, E  0, D    292, V 14
+N    2, T 0, P     18, S  1, E  0, D    288, V 14
+N    5, T 1, P     10, S  1, E  0, D    290, V 14
+N    3, T 1, P      8, S  1, E  0, D    288, V 14
+N    1, T 0, P      0, S  1, E  0, D    290, V 14
+C
+N    1, T 0, P      2, S  1, E  0, D    292, V 14
+N    4, T 1, P     14, S  1, E  0, D    294, V 14
+N    0, T 0, P      4, S  1, E  0, D    294, V 14
+N    5, T 1, P     12, S  1, E  0, D    292, V 14
+N    3, T 1, P     10, S  1, E  0, D    290, V 14
+N    2, T 0, P      0, S  1, E  0, D    290, V 14
+C
+N    2, T 0, P      2, S  1, E  0, D    292, V 14
+N    1, T 0, P      4, S  1, E  0, D    294, V 14
+N    4, T 1, P     16, S  1, E  0, D    296, V 14
+N    0, T 0, P      6, S  1, E  0, D    296, V 14
+N    5, T 1, P     14, S  1, E  0, D    294, V 14
+N    3, T 1, P     12, S  1, E  0, D    292, V 14
+C
+N    3, T 1, P     14, S  1, E  0, D    294, V 14
+N    2, T 0, P      4, S  1, E  0, D    294, V 14
+N    1, T 0, P      6, S  1, E  0, D    296, V 14
+N    4, T 1, P     18, S  1, E  0, D    298, V 14
+N    0, T 0, P      8, S  1, E  0, D    298, V 14
+N    5, T 1, P     16, S  1, E  0, D    296, V 14
+C
+N    5, T 1, P     18, S  1, E  0, D    298, V 14
+N    3, T 1, P     16, S  1, E  0, D    296, V 14
+N    2, T 0, P      6, S  1, E  0, D    296, V 14
+N    1, T 0, P      8, S  1, E  0, D    298, V 14
+N    4, T 1, P      0, S  1, E  0, D    300, V 15
+N    0, T 0, P     10, S  1, E  0, D    300, V 15
+C
+N    0, T 0, P     12, S  1, E  0, D    302, V 15
+N    5, T 1, P      0, S  1, E  0, D    300, V 15
+N    3, T 1, P     18, S  1, E  0, D    298, V 14
+N    2, T 0, P      8, S  1, E  0, D    298, V 14
+N    1, T 0, P     10, S  1, E  0, D    300, V 15
+N    4, T 1, P      2, S  1, E  0, D    302, V 15
+C
+N    4, T 1, P      4, S  1, E  0, D    304, V 15
+N    0, T 0, P     14, S  1, E  0, D    304, V 15
+N    5, T 1, P      2, S  1, E  0, D    302, V 15
+N    3, T 1, P      0, S  1, E  0, D    300, V 15
+N    2, T 0, P     10, S  1, E  0, D    300, V 15
+N    1, T 0, P     12, S  1, E  0, D    302, V 15
+C
+N    1, T 0, P     14, S  1, E  0, D    304, V 15
+N    4, T 1, P      6, S  1, E  0, D    306, V 15
+N    0, T 0, P     16, S  1, E  0, D    306, V 15
+N    5, T 1, P      4, S  1, E  0, D    304, V 15
+N    3, T 1, P      2, S  1, E  0, D    302, V 15
+N    2, T 0, P     12, S  1, E  0, D    302, V 15
+C
+N    2, T 0, P     14, S  1, E  0, D    304, V 15
+N    1, T 0, P     16, S  1, E  0, D    306, V 15
+N    4, T 1, P      8, S  1, E  0, D    308, V 15
+N    0, T 0, P     18, S  1, E  0, D    308, V 15
+N    5, T 1, P      6, S  1, E  0, D    306, V 15
+N    3, T 1, P      4, S  1, E  0, D    304, V 15
+C
+N    3, T 1, P      6, S  1, E  0, D    306, V 15
+N    2, T 0, P     16, S  1, E  0, D    306, V 15
+N    1, T 0, P     18, S  1, E  0, D    308, V 15
+N    4, T 1, P     10, S  1, E  0, D    310, V 15
+N    0, T 0, P      0, S  1, E  0, D    310, V 15
+N    5, T 1, P      8, S  1, E  0, D    308, V 15
+C
+N    5, T 1, P     10, S  1, E  0, D    310, V 15
+N    3, T 1, P      8, S  1, E  0, D    308, V 15
+N    2, T 0, P     18, S  1, E  0, D    308, V 15
+N    1, T 0, P      0, S  1, E  0, D    310, V 15
+N    4, T 1, P     12, S  1, E  0, D    312, V 15
+N    0, T 0, P      2, S  1, E  0, D    312, V 15
+C
+N    0, T 0, P      4, S  1, E  0, D    314, V 15
+N    5, T 1, P     12, S  1, E  0, D    312, V 15
+N    3, T 1, P     10, S  1, E  0, D    310, V 15
+N    2, T 0, P      0, S  1, E  0, D    310, V 15
+N    1, T 0, P      2, S  1, E  0, D    312, V 15
+N    4, T 1, P     14, S  1, E  0, D    314, V 15
+C
+N    4, T 1, P     16, S  1, E  0, D    316, V 15
+N    0, T 0, P      6, S  1, E  0, D    316, V 15
+N    5, T 1, P     14, S  1, E  0, D    314, V 15
+N    3, T 1, P     12, S  1, E  0, D    312, V 15
+N    2, T 0, P      2, S  1, E  0, D    312, V 15
+N    1, T 0, P      4, S  1, E  0, D    314, V 15
+C
+N    1, T 0, P      6, S  1, E  0, D    316, V 15
+N    4, T 1, P     18, S  1, E  0, D    318, V 15
+N    0, T 0, P      8, S  1, E  0, D    318, V 15
+N    5, T 1, P     16, S  1, E  0, D    316, V 15
+N    2, T 0, P      4, S  1, E  0, D    314, V 15
+N    3, T 1, P     14, S  1, E  0, D    314, V 15
+C
+N    3, T 1, P     16, S  1, E  0, D    316, V 15
+N    1, T 0, P      8, S  1, E  0, D    318, V 15
+N    4, T 1, P      0, S  2, E  0, D    320, V 16
+N    0, T 0, P     10, S  2, E  0, D    320, V 16
+N    5, T 1, P     18, S  1, E  0, D    318, V 15
+N    2, T 0, P      6, S  1, E  0, D    316, V 15
+C
+N    2, T 0, P      8, S  1, E  0, D    318, V 15
+N    3, T 1, P     18, S  1, E  0, D    318, V 15
+N    1, T 0, P     10, S  2, E  0, D    320, V 16
+N    5, T 1, P      0, S  2, E  0, D    320, V 16
+C
+N    2, T 0, P     10, S  2, E  0, D    320, V 16
+N    3, T 1, P      0, S  2, E  0, D    320, V 16
+C

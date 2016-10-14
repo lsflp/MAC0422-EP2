@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+%\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{courier}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[EP2]{EP2 de MAC0422} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Gabriel Capella e Luís Felipe de Melo} % Your name
+\institute[USP] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Universidade de São Paulo \\ % Your institution for the title page
+\medskip
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+%\section{Problema} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+%\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Problema}
+Temos que simular uma das provas do ciclismo, a perseguição por equipe. No programa, temos 2 equipes, e cada uma possui \texttt{n} ciclistas. A pista possui \texttt{d} metros. Cada time começa em um lado oposto da pista. Durante a corrida, apenas dois ciclistas podem estar lado a lado no circuito. Vence a equipe cujo terceiro ciclista ultrapassa o terceiro ciclista da outra equipe ou quando o terceiro ciclista de uma equipe termina 16 voltas primeiro.\\~\\
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Implementação}	
+\begin{itemize}
+\item Cada ciclista é implementado com uma thread ciclista. 
+\item Implementamos a pista como quatro vetores de tamanho \texttt{2*d} (logo, cada ciclista ocupa duas posições no vetor): 
+	\begin{itemize}
+		\item Pista interna (\texttt{round = 0})
+		\item Pista interna (\texttt{round = 1})
+		\item Pista externa (\texttt{round = 0})
+		\item Pista externa (\texttt{round = 1})
+	\end{itemize}
+\item Fizemos essa escolha porque as velocidades podem variar, no modo v. 
+\item Então, quando o ciclista está a 30 km/h, ele se move uma posição no vetor. Quando está a 60 km/h, move-se duas.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+	\item Declaramos uma variável round, que indica para qual pista o ciclista deve ir. A iteração referente a isso fica assim:
+\end{itemize}
+\begin{block}{}
+	Cada ciclista vai para a pista interna do round diferente do atual. Se a posição de destino já estiver ocupada, ele tenta ir para a pista externa (ultrapassar). Caso a externa esteja ocupada, vai ficar uma posição atrás. As threads são sincronizadas e cada uma delas verifica as condições de término e aleatoriedade da corrida. Então, repetimos os passos.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Considerações}
+\begin{itemize}
+	\item O custo da ultrapassagem (sair da pista interna e ir para a externa) é o mesmo custo de ir para a frente.
+	\item Cada ciclista é autônomo, ele sabe as regras e decide se ultrapassa ou não.
+	\item A corrida começa com todos os ciclistas fora da pista e os ciclistas da equipe A são inseridos nas posições 0 e 1 (já que em nossa implementação os ciclistas ocupam duas posições de vetor) do vetor e os ciclistas da equipe B são inseridos nas posições \texttt{d} e \texttt{d+1}.
+	\item Sobre o ciclista que “segura” os outros:  quando um ciclista passar na linha de chegada, ele vai ver se existe algum colega de equipe com número de voltas maior do que o dele em sua frente e que tenha a velocidade de 30km/h.  Se ninguém tiver ele sorteia a velocidade, se alguém tiver ele vai andar a 30 km/h.
+	
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Probabilidade de quebra}
+	\begin{itemize}
+		\item Temos no enunciado que a probabilidade de quebra é 10\% e 4 rodadas. 
+		Vamos considerar que ela seja uniforme, ou seja, a probabilidade de quebrar em movimento será: \\
+		\begin{center} 
+			$P(q) = \frac{0,1 \cdot v}{d \cdot 8}$
+		\end{center}
+		\item Onde v é a velocidade, que é 1 caso 30 km/h ou 2, caso contrário.
+		\item Exemplo: Um ciclista está andando a 60 km/h. A probabilidade de que ele quebre a cada passo da iteração em uma pista de 400 m é de 0.00125.
+		Vamos observar que o ciclista anda e quebra, não começa uma volta quebrado, mas pode terminar assim. 
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item Em nosso código, utilizamos o tempo como raiz da função \texttt{random}.
+		\item Além disso, temos a seguinte fórmula:
+		\begin{center} 
+			$P(q) = \frac{speed}{80 \cdot d}$
+		\end{center}
+		\item Note que duas vezes a distância máxima é igual à máxima posição que um ciclista pode estar, portanto o 40 da nossa fórmula.
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Módulos}
+	\framesubtitle{barrier.h}
+	\begin{itemize}
+		\item Fizemos a nossa própria biblioteca de barreiras. 
+		\item A principal razão disso é que as barreiras da \texttt{pthread.h} não funcionariam direito quando um ciclista quebra. Quando ele quebra, sua thread é destruída, e o número de threads é alterado.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Módulos}
+	\framesubtitle{cyclist.h}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Módulos}
+	\framesubtitle{ep2.c}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Entrada}
+	\begin{center}
+		\texttt{\$ ./ep2 d n [v|u] [−v]}
+	\end{center}	
+	\begin{itemize}
+		\item \texttt{d}: número inteiro que representa o comprimento em metros da pista.
+		\item \texttt{n}: número de ciclistas em cada equipe. 
+		\item \texttt{v}: usado para definir simulações com velocidades aleatórias a cada volta. 
+		\item \texttt{u}: define simulações com velocidades uniformes de 60 km/h.  
+		\item \texttt{-v}:  opção para mostrar tudo(debug), utilizado para produzir saída para o terminal. 
+	\end{itemize} 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Saída}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Testes}
+	
+\end{frame}
+
+\begin{frame}
+	Feito por:
+	\begin{itemize}
+		\item Gabriel Capella, 8962078.
+		\item Luís Felipe de Melo, 9297961.
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Fim.}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 

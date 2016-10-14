@@ -1,0 +1,84 @@
+\documentclass[]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+%opening
+\title{EP2 - MAC0422}
+\author{}
+
+\begin{document}
+
+\maketitle 
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Como vai funcionar!}
+
+Nesse EP vamos querer facilitar a nossa vida. Nele vamos colocar criar dois vetores de tamanho $2*d$. Nele, cada ciclista vai ocupar duas posições, pois cada ciclista tem tamanho 1 metro e cada elemento do nosso vetor representa 0.5m. Não optamos por usar um vetor de tamanho $d$, pois se um ciclista se mover a 0,5m em um passo da simulação de 60ms.
+
+Vão existir 4 vetores de pista, cada um com tamanho $2*n$:
+
+\begin{enumerate}
+	\item Pista interna $(round = 0)$
+	\item Pista interna $(round = 1)$
+	\item Pista externa $(round = 0)$
+	\item Pista externa $(round = 1)$
+\end{enumerate}
+
+A cada passo da simulação existirá uma variável $round$, ela indicará para qual pista o ciclista deve ir. Os passos da nosso programa serão dessa maneira: cada ciclista vai para a pista interna do $round$ diferente do atual, se a posição de destino já estiver ocupada tenta ir para a pista externa (fazer ultrapassagem), caso a externa esteja ocupada, vai ficar atrás; as threads são sincronizadas e uma delas verifica as condições de termino e aleatoriedade da corrida; repetimos os passos.
+
+
+\section{Considerações}
+Para um ciclista sair da pista mais interna e ir para a externa, ultrapassar, é o mesmo custo dele ir para frente.
+
+Cada ciclista é autônomo, ele sabe as regras e ele decide se vai ultrapassar ou não.
+
+A corrida começa com todos os ciclistas fora da pista. E a cada passo da simulação os ciclistas da equipe $A$ são inseridos na posição 0 e 1 do vetor e os ciclistas da equipe $B$ são inseridos na posição $d$ e $d+1$. Ele somente consegue entrar na pista interna.
+
+A questão do ciclista contido (o que tem que ficar a 30km/h) vai funcionar da seguinte maneira: quando um ciclista passar na linha de chegada, ele vai ver se existe algum colega com numero de voltas maior do que o dele em sua frente cujo tenha a velocidade de 30km/h, se ninguém tiver ele sortea a velocidade, se alguém tiver ele vai andar a 30 km/h!.
+
+Note que um time inicia na posição 0 e o outro na posição d/2!
+
+
+\section{Barreiras}
+	Nos implementamos com ...
+	
+\section{Probabilidade de quebra}
+	Temos no enunciado que a probabilidade de quebra é $10\%$ e 4 rodadas. Vamos considerar que ela seja uniforme, ou seja, a probabilidade de quebrar em movimento será:
+	
+	$$
+	P(q) = \frac{10\% * v}{d*8}
+	$$
+	Onde $v$ é a velocidade e representa 1 ou 2, sendo 1 para 30 km/h e 2 para 60 km/h. O Exemplo: suponha que o ciclista estaja andando a 60km/h, a probabilidade de ele quebrar a cada paço da interação será em uma posta de 400 metros será  0.00125.
+	
+	Note que o ciclista vai andar e quebrar, ou seja, ele não pode começar quebrado, mas ele pode chegar quebrado na linha de chegada.
+	
+	Veja que no código utilizamos o tempo como raiz da função randómica. Além disso temos a seguinte fórmula:
+	
+	$$
+	P(q) = \frac{speed}{80*d}
+	$$ 
+	
+	Note que $2 * d_{MAX} = pos_{MAX}$, com isso podemos observar da onde vem o 40 dessa fórmula. 
+
+
+\section{Argumentos}
+
+\begin{center}
+	$ep2$ $d$ $n$ $[v|u]$ $[-v]$
+\end{center}
+
+$d$ numero inteiro, comprimento em metros da pista.
+
+$n$ número de ciclista em cada equipe.
+
+$v$ usado para definir simulações com velocidades aleatórias a cada volta. 
+
+$u$ usado para definir simulações com velocidades uniformes de 60Km/h.
+
+$-v$ opção para mostrar tudo, utilizado para produzir saída para a interface gráfica.
+
+\end{document}
