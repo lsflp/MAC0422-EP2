@@ -75,7 +75,7 @@
 
 \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
-\usepackage[brazilian]{babel}
+%\usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{pgfplots}
 \usepackage{graphicx} % Allows including images
@@ -119,26 +119,12 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 \begin{frame}
 \frametitle{Implementação}	
 \begin{itemize}
-\item Cada ciclista é implementado com uma thread ciclista. 
-\item Implementamos a pista como quatro vetores de tamanho \texttt{2*d} (logo, cada ciclista ocupa duas posições no vetor): 
-	\begin{itemize}
-		\item Pista interna (\texttt{round = 0})
-		\item Pista interna (\texttt{round = 1})
-		\item Pista externa (\texttt{round = 0})
-		\item Pista externa (\texttt{round = 1})
-	\end{itemize}
-\item Fizemos essa escolha porque as velocidades podem variar, no modo v. 
+\item Cada ciclista é implementado com uma thread \texttt{ciclista}. 
+\item Implementamos a pista como dois vetores de tamanho \texttt{2*d} (logo, cada ciclista ocupa duas posições no vetor). Os dois vetores representam a pista interna e a pista externa.
+\item Fizemos essa escolha porque as velocidades podem variar, no modo \texttt{v}. 
 \item Então, quando o ciclista está a 30 km/h, ele se move uma posição no vetor. Quando está a 60 km/h, move-se duas.
+\item Temos um "juiz" que fiscaliza a corrida.
 \end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{itemize}
-	\item Declaramos uma variável round, que indica para qual pista o ciclista deve ir. A iteração referente a isso fica assim:
-\end{itemize}
-\begin{block}{}
-	Cada ciclista vai para a pista interna do round diferente do atual. Se a posição de destino já estiver ocupada, ele tenta ir para a pista externa (ultrapassar). Caso a externa esteja ocupada, vai ficar uma posição atrás. As threads são sincronizadas e cada uma delas verifica as condições de término e aleatoriedade da corrida. Então, repetimos os passos.
-\end{block}
 \end{frame}
 
 %------------------------------------------------
@@ -164,7 +150,7 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 		\end{center}
 		\item Onde v é a velocidade, que é 1 caso 30 km/h ou 2, caso contrário.
 		\item Exemplo: Um ciclista está andando a 60 km/h. A probabilidade de que ele quebre a cada passo da iteração em uma pista de 400 m é de 0.00125.
-		Vamos observar que o ciclista anda e quebra, não começa uma volta quebrado, mas pode terminar assim. 
+		\item Obs: O ciclista anda e quebra, não começa uma volta quebrado, mas pode terminar assim. 
 		
 	\end{itemize}
 \end{frame}
@@ -187,22 +173,65 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 	\begin{itemize}
 		\item Fizemos a nossa própria biblioteca de barreiras. 
 		\item A principal razão disso é que as barreiras da \texttt{pthread.h} não funcionariam direito quando um ciclista quebra. Quando ele quebra, sua thread é destruída, e o número de threads é alterado.
+		\item Implementamos nossa barreira como uma struct que possui dois semáforos (mutexes), uma variável condicional das pthreads o número total de threads e um contador de quantas já finalizaram.
+		\item Existem as funções de inicializar, destruir, esperar e a remover uma thread.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Módulos}
-	\framesubtitle{cyclist.c}	
+	\framesubtitle{cyclist.c}
+	\begin{itemize}
+		\item Esse módulo cuida de tudo relacionado aos ciclistas.
+		\item Declaramos o ciclista como uma
+		\texttt{struct} que possui os seguintes campos:
+		\begin{itemize}
+			\item Número do ciclista.
+			\item Número do time.
+			\item A distância total percorrida.
+			\item Status do ciclista.         
+			\item Velocidade.
+			\item Qual pista ele está.
+			\item Momento em que acaba a prova.
+			\item Qual a linha de chegada dele.    
+			\item Qual volta ele está.     
+			\item Se o inspetor validou a volta dele.
+		\end{itemize}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item Esse módulo possui funções públicas e privadas.
+		\item As funções públicas são as de configurar o ambiente, inicializar o ciclista, a função para a thread do ciclista e a função de desalocar a memória.
+		\item As funções privadas são as funções de ver como está a frente do ciclista (posição e semáforo mutex), a de colocar o ciclista na pista e a de avançar \texttt{x} posições. 
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Módulos}
-	\framesubtitle{inspector.c}	
+	\framesubtitle{inspector.c}
+	\begin{itemize}
+		\item Esse módulo funciona como um juiz para a prova.
+		\item É como se tivesse alguém responsável por ver se a corrida está indo de forma correta.
+		\item Suas funções são: mostrar quem quebrou, exibir os dados do fim da corrida e dizer se o ciclista pode acelerar (de 30 km/h para 60 km/h).
+		\item Ele possui uma função de inicialização (basicamente pegando as informações que vieram da \texttt{main}) e uma que checa as seguintes informações:
+		\begin{itemize}
+			\item O número de voltas.
+			\item O decremento da barreira.
+			\item Como estão os terceiros das equipes (se terminou a corrida ou se passou na frente do outro terceiro).
+		\end{itemize}
+	\end{itemize}	
 \end{frame}
 
 \begin{frame}
 	\frametitle{Módulos}
-	\framesubtitle{ep2.c}	
+	\framesubtitle{ep2.c}
+	\begin{itemize}
+		\item Recebe as informações da entrada e assim define as modos de execução, passando essas informações para as funções dos módulos.
+		\item Declara o espaço de trabalho, chama as funções de inicialização e então convoca as de execução para os ciclistas.
+		\item Usa as funções do juiz para exibição de informações.
+	\end{itemize}	
 \end{frame}
 
 \begin{frame}
@@ -221,14 +250,36 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 
 \begin{frame}
 	\frametitle{Saída}
+	\begin{itemize}
+		\item A saída tem a seguinte forma:
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.4]{5-a.png}
+		\end{figure}
+		\item Mostrando o modo das velocidades, e a cada volta (tempo), o primeiro, o segundo e o terceiro colocado de cada time, com a sua metragem percorrida (por 16 voltas).
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.4]{5-b.png}
+		\end{figure}
+		\item No final, mostra os ciclistas quebrados, a ordem de chegada e quem venceu ou se houve empate.
+	\end{itemize}
+\end{frame}
 	
+\begin{frame}
+	\begin{itemize}
+		\item No modo debug, temos as seguintes informações (respectivamente): o número do ciclista, seu time, a distância percorrida na volta, o status, qual pista ele está (interna ou externa), a distância total percorrida e a volta.
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.5]{6.png}
+		\end{figure}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Testes}
 	\begin{itemize}
 		\item Para os testes, executamos o programa da seguinte maneira:
-		\item \quad \texttt{\$ /usr/bin/time -v ./ep2 d n [v|u] [-v]}
+		\item \quad \texttt{\$ /usr/bin/time -v ./ep2 d n v}
 		\item Com isso, temos uma saída desse tipo, além da saída do programa:
 		\begin{figure}[!h]
 			\centering
@@ -241,7 +292,7 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 	\begin{itemize}
 		\item De todos esses dados, utilizamos o Maximum resident set size para fazer as medições.
 		\item Esse item representa o máximo de memória que pertenceu ao processo e ficou na RAM durante a execução, em kbytes.
-		\item Com isso, temos os seguintes gráficos, com poucos, muitos e um valor intermediário de ciclistas para uma pista pequena, média e grande.
+		\item Com isso, temos os seguintes gráficos, com poucos (5), muitos (80) e um valor intermediário de ciclistas (20) para uma pista pequena (250 m), média (1000 m) e grande (4000 m).
 	\end{itemize}
 \end{frame}
 
