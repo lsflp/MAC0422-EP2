@@ -1,9 +1,9 @@
-uso = [1911.2, 2158, 3000]; 
-desvio = [18.299, 20.373, 500];  
+uso = [3.817667, 18.924, 81.49567]; 
+desvio = [0.381718, 1.881, 7.26671];  
 figure
 hold on
-title('Uso de memória para d = 4000')
+title('Tempo de execução para d = 4000')
 xlabel('Nº de ciclistas')
-ylabel('Uso de memória (kb)')
+ylabel('Tempo (s)')
 bar(uso, 0.5, 'w')
 errorbar(uso,desvio, '.')

@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 int main (int argc, char **argv) {
-	int i = 0, j, num;
+	int i = 0, j; 
+	float num;
 	char c;
 	while (scanf ("%c", &c) != EOF) {
 		if (c == '\n')
 			i++;
-		if (i == 9)
+		if (i == 1)
 			break;
 	}
-	for (j = 0; j < 37; j++)
+	for (j = 0; j < 22; j++)
 		scanf ("%c", &c);
 	
-	scanf ("%d", &num);
-	printf ("%d\n", num);
+	scanf ("%f", &num);
+	printf ("%f\n", num);
 }

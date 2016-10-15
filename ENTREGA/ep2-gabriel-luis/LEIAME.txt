@@ -1,0 +1,21 @@
+Nomes: Gabriel Capella                       Números USP: 8962078 
+       Luís Felipe de Melo Costa Silva                    9297961
+
+ARQUIVO LEIAME
+
+Compilação: Basta usar o arquivo Makefile anexado, da seguinte forma:
+            $ make
+
+Execução: A seguinte linha deve ser utilizada:
+          $ ./ep2 d n [v|u] [-v]
+			
+	      Onde:
+	      d é um número inteiro que representa o comprimento em metros da pista. (d > 249)
+          n é o número de ciclistas em cada equipe. (n > 4)
+          
+          DOS DOIS SEGUINTES, APENAS UM DEVE SER UTILIZADO:
+          v é usado para definir simulações com velocidades aleatórias a cada volta.
+		  u define simulações com velocidades uniformes de 60 km/h.
+		  
+		  OPCIONAL:
+		  -v é a opção para mostrar tudo (debug), utilizado para produzir saída para o terminal.

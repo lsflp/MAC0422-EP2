@@ -244,7 +244,7 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 		\item \texttt{n}: número de ciclistas em cada equipe. 
 		\item \texttt{v}: usado para definir simulações com velocidades aleatórias a cada volta. 
 		\item \texttt{u}: define simulações com velocidades uniformes de 60 km/h.  
-		\item \texttt{-v}: opção para mostrar tudo(debug), utilizado para produzir saída para o terminal. 
+		\item \texttt{-v}: opção para mostrar tudo (debug), utilizado para produzir saída para o terminal. 
 	\end{itemize} 
 \end{frame}
 
@@ -290,8 +290,9 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 
 \begin{frame}
 	\begin{itemize}
-		\item De todos esses dados, utilizamos o Maximum resident set size para fazer as medições.
+		\item De todos esses dados, utilizamos o Maximum resident set size para fazer as medições de uso de memória.
 		\item Esse item representa o máximo de memória que pertenceu ao processo e ficou na RAM durante a execução, em kbytes.
+		\item Para o tempo de execução do processo, utilizamos o User time, que é o tempo que o processo dura na visão do usuário, em segundos.
 		\item Com isso, temos os seguintes gráficos, com poucos (5), muitos (80) e um valor intermediário de ciclistas (20) para uma pista pequena (250 m), média (1000 m) e grande (4000 m).
 	\end{itemize}
 \end{frame}
@@ -314,6 +315,27 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[scale=0.4]{3.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{7.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{8.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{9.png}
 	\end{figure}
 \end{frame}
 

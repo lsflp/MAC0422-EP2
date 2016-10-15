@@ -3,16 +3,15 @@
 
 int main (int argc, char **argv) {
 	int N = atoi (argv[1]);
-	int *todos = malloc (N * sizeof(int));
+	float *todos = malloc (N * sizeof(float));
 	int i;
 	int numero;
-	printf("%d\n", N);
 	for (i = 0; i < N; i++) {
-		scanf ("%d", &todos[i]);
+		scanf ("%f", &todos[i]);
 	}
 	printf ("tempo <- c(");
 	for (i = 0; i < N; i++) {
-		printf ("%d", todos[i]);
+		printf ("%f", todos[i]);
 		if (i < N-1) 
 			printf(", ");
 	}
