@@ -1,0 +1,55 @@
+GRÁFICOS:
+
+"Teste 1 d = 250 e n = 5"
+> ic.m(tempo)
+[1] 1554.737 1592.463
+> mean(tempo)
+[1] 1573.6
+
+"Teste 2 d = 250 e n = 20"
+> ic.m(tempo)
+[1] 1786.030 1824.904
+> mean(tempo)
+[1] 1805.467
+
+"Teste 3 d = 250 e n = 80"
+> ic.m(tempo)
+[1] 2747.919 2788.881
+> mean(tempo)
+[1] 2768.4
+
+"Teste 4 d = 1000 e n = 5"
+> ic.m(tempo)
+[1] 1640.654 1675.612
+> mean(tempo)
+[1] 1658.133
+
+"Teste 5 d = 1000 e n = 20"
+> ic.m(tempo)
+[1] 1841.821 1878.445
+> mean(tempo)
+[1] 1860.133
+
+"Teste 6 d = 1000 e n = 80"
+> ic.m(tempo)
+[1] 2840.162 2867.571
+> mean(tempo)
+[1] 2853.867
+
+"Teste 7 d = 4000 e n = 5"
+> ic.m(tempo)
+[1] 1892.901 1929.499
+> mean(tempo)
+[1] 1911.2
+
+"Teste 8 d = 4000 e n = 20"
+> ic.m(tempo)
+[1] 2137.627 2178.373
+> mean(tempo)
+[1] 2158
+
+"Teste 9 d = 4000 e n = 80"
+> ic.m(tempo)
+[1] 3110.980 3161.553
+> mean(tempo)
+[1] 3136.267

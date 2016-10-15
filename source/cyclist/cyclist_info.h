@@ -1,35 +1,46 @@
-/* //////////////////////////////////////////////////////////////
-// 
-// Autor: Gabriel Capella
-// Numero USP: 8962078
-// Sigla: GABRIELC
-// Data: 2015-10-13
-// 
-////////////////////////////////////////////////////////////// */
+/********************************************************************
+ *  Nomes: Gabriel Capella                       Números USP: 8962078 
+ *         Luís Felipe de Melo Costa Silva                    9297961
+ * 
+ *  Arquivo:   cyclist_info.h
+ *  Descrição: BArquivo que contém a definição de cyclist (ciclista).
+ ********************************************************************/ 
+
 #ifndef CYCLIST_INFO_H
 #define CYCLIST_INFO_H
 
-/* definicoes de velocidade*/
+/* Definições de velocidade*/
 #define SPEED_30 0
 #define SPEED_60 1
 
-/* definicoes de modo */
+/* Definições de modo */
 #define RANDOM 1
 #define CONSTANT 0
 
-
+/* Definindo o tipo de ciclista que usaremos. */
 struct cyclist {
-    int             number; /* numero do ciclista */
-    int             team; /* numero do time, 0 ou 1 */
-    int             dist; /* a distancia total percorrida */
-    int             status; /* 0, esperando entrar, 1 correndo, 2 acabou, 3 quebrado */
-    int             speed; /* 1: 60, 0: 30 */
-    int             speedway; /* 0: internal, 1: external, -1 ainda nao entrou ou teve que sair */
-    double          end_moment; /* momento em que acaba prova */
-    int             init_position; /* qual e a linha de chegada */
-    int             lap; /* marca em qual volta esta */
-    int             lap_marker; /* o volta somnete sera computado se o fiscal deixar */
+    int             number;        /* Número do ciclista */
+    int             team;          /* Número do time: 0 ou 1 */
+    int             dist;          /* A distância total percorrida */
+    int             status;        /* Ver STATUS. */ 
+    int             speed;         /* 0: 30 km/h; 1: 60 km/h */
+    int             speedway;      /* Ver SPEEDWAY */
+    double          end_moment;    /* Momento em que acaba a prova */
+    int             init_position; /* Qual é a linha de chegada */
+    int             lap;           /* Marca em qual volta ele está */
+    int             lap_marker;    /* A volta só será computada se o fiscal deixar */
 };
 typedef struct cyclist * Cyclist;
+
+/* STATUS:
+ * 0: Esperando para entrar;
+ * 1: Correndo;
+ * 2: Acabou;
+ * 3: Quebrado. */
+
+/* SPEEDWAY:
+ * 0:  Internal;
+ * 1:  External;
+ * -1: Ainda não entrou ou teve que sair; */
 
 #endif

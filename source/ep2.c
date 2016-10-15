@@ -1,4 +1,29 @@
-/* d n [v|u] d dist, n numero */
+/********************************************************************
+ *  Nomes: Gabriel Capella                       Números USP: 8962078 
+ *         Luís Felipe de Melo Costa Silva                    9297961
+ * 
+ *  Arquivo:    ep2.c
+ *  Compilação: make
+ *  Execução:   ./ep2 d n [v|u] [-v]
+ *  Descrição:  Simula uma das provas do ciclismo, a perseguição por 
+ *              equipes, com o uso de threads representando cada 
+ *              ciclista. Sobre a entrada:
+ *              d: tamanho da pista
+ *              n: número de ciclistas em cada equipe. 
+ *              v: simulações com velocidades aleatórias a cada volta. 
+ *              u: simulações com velocidades uniformes de 60 km/h.  
+ *              -v: mostrar debug.
+ *              A saída mostra um relatório informando a cada volta 
+ *              completada pelo terceiro ciclista de uma equipe, todos
+ *              os 3 primeiros ciclistas daquela equipe, o número da 
+ *              volta, e o instante de tempo que esse terceiro 
+ *              ciclista passou pela linha de chegada (considerando 
+ *              que a simulação começa no instante de tempo 0). A 
+ *              opção debug mostra a cada 60 ms o status de cada 
+ *              posição da pista.
+ *              
+ ********************************************************************/ 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -9,18 +34,18 @@
 
 #define NONE -1
 
-/* definicoes de termino */
+/* Definições de término. */
 #define EMPATE 0
 #define TEAM_0 1
 #define TEAM_1 2
 
 int main(int argc, char const *argv[]) {
-    pthread_t *threads; /* salva o id de cada thread */
+    pthread_t *threads;              /* Salva o id de cada thread */
     int i, n, d, verbose;
     char mode;
     int * positions[2];
-    Cyclist cyclists; /* as informacoes de cada ciclista */
-    pthread_mutex_t *positions_lock; /* mutexs das posicoes */
+    Cyclist cyclists;                /* As informações de cada ciclista */
+    pthread_mutex_t *positions_lock; /* Mutexes das posições */
 
     srand((unsigned) time(NULL));
 
@@ -41,7 +66,7 @@ int main(int argc, char const *argv[]) {
     if (mode == RANDOM && !verbose) printf("Mode: RANDOM\n");
     if (mode == CONSTANT && !verbose) printf("Mode: CONSTANT\n");
 
-    /* pista interna 0 e externa 1 */
+    /* Pista interna: 0 e externa: 1 */
     positions[0] = malloc(2 * d * sizeof(int*));
     positions[1] = malloc(2 * d * sizeof(int*));
 
@@ -55,27 +80,25 @@ int main(int argc, char const *argv[]) {
             fprintf(stderr, "Error creating mutex\n");
             return EXIT_FAILURE;
         }
-        /* initialize mutex to 1 - binary semaphore */
-        /* second param = 0 - semaphore is local */
         positions[0][i] = -1;
         positions[1][i] = -1;
     }
 
-    /* informa para todos as regras */
+    /* Informa as regras para todos */
     cyclists_setup (positions, positions_lock, d, n, (int)mode);
     for (i = 0; i < 2 * n; ++i) cyclist_setup (&cyclists[i], i, i/n);
 
     /* informa dados ao inspetor */
     ins_init (verbose, cyclists, n, d);
 
-    /* cria threads */
+    /* Cria as threads */
     for (i = 0; i < 2 * n; ++i) {
         if(pthread_create(&threads[i], NULL, cyclist_thread, (void *)&cyclists[i])) {
             fprintf(stderr, "Error creating thread\n");
             return EXIT_FAILURE;
         }
     }
-    /* join threads */
+    /* Faz o join das threads */
     for (i = 0; i < 2 * n; ++i) {
         if(pthread_join(threads[i], NULL)) {
             fprintf(stderr, "Error joining thread\n");
