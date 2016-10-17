@@ -23,13 +23,12 @@ static int finish_order_count;           /* Conta quantos já finalizaram */
 
 /* FUNÇÃO PRIVADA ///////////////////////////////////////////////// */
 
-/* Faz uma ordenação na mão para saber a ordem dos três ciclistas mais
+/* Faz uma ordenação "na mão" para saber a ordem dos três ciclistas mais
  * à frente. */
 static void ins_first_three () {
     int i, t;
     for (i = 0; i < 2*n; ++i) {
         t = cyclists[i].team;
-        /* ordenacao na raca */
         if (first_3[t][0] == NULL || first_3[t][0]->dist < cyclists[i].dist) {
             first_3[t][2] = first_3[t][1];
             first_3[t][1] = first_3[t][0];

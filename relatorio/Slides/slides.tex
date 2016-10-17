@@ -134,11 +134,16 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 	\item O custo da ultrapassagem (sair da pista interna e ir para a externa) é o mesmo custo de ir para a frente.
 	\item Cada ciclista é autônomo, ele sabe as regras e decide se ultrapassa ou não.
 	\item A corrida começa com todos os ciclistas fora da pista e os ciclistas da equipe A são inseridos nas posições 0 e 1 (já que em nossa implementação os ciclistas ocupam duas posições de vetor) do vetor e os ciclistas da equipe B são inseridos nas posições \texttt{d} e \texttt{d+1}.
-	\item Sobre o ciclista que “segura” os outros:  quando um ciclista passar na linha de chegada, ele vai ver se existe algum colega de equipe com número de voltas maior do que o dele em sua frente e que tenha a velocidade de 30km/h.  Se ninguém tiver ele sorteia a velocidade, se alguém tiver ele vai andar a 30 km/h.
 	
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+	\begin{itemize}
+		\item Sobre o ciclista que “segura” os outros:  quando um ciclista passar na linha de chegada, ele vai ver se existe algum colega de equipe com número de voltas maior do que o dele em sua frente e que tenha a velocidade de 30km/h.  Se ninguém tiver ele sorteia a velocidade, se alguém tiver ele vai andar a 30 km/h.
+		\item Quando dois ciclistas paralelos a 60 km/h se deparam com um ciclista a 30 km/h à frente, o primeiro que conseguir o mutex para ficar paralelo ao de 30 km/h vai manter a velocidade. O outro vai ficar a 30 km/h.
+	\end{itemize}
+\end{frame}
 %------------------------------------------------
 \begin{frame}
 	\frametitle{Probabilidade de quebra}
@@ -146,7 +151,7 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 		\item Temos no enunciado que a probabilidade de quebra é 10\% e 4 rodadas. 
 		Vamos considerar que ela seja uniforme, ou seja, a probabilidade de quebrar em movimento será: \\
 		\begin{center} 
-			$P(q) = \frac{0,1 \cdot v}{d \cdot 8}$
+			$P(q) = \frac{0,1 \cdot v}{n \cdot d \cdot 8}$
 		\end{center}
 		\item Onde v é a velocidade, que é 1 caso 30 km/h ou 2, caso contrário.
 		\item Exemplo: Um ciclista está andando a 60 km/h. A probabilidade de que ele quebre a cada passo da iteração em uma pista de 400 m é de 0.00125.
@@ -158,9 +163,9 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 \begin{frame}
 	\begin{itemize}
 		\item Em nosso código, utilizamos o tempo como raiz da função \texttt{random}.
-		\item Além disso, temos a seguinte fórmula:
+		\item Temos a seguinte fórmula:
 		\begin{center} 
-			$P(q) = \frac{speed}{80 \cdot d}$
+			$P(q) = \frac{speed}{n \cdot d \cdot 80}$
 		\end{center}
 		\item Note que duas vezes a distância máxima é igual à máxima posição que um ciclista pode estar, portanto o 40 da nossa fórmula.
 	\end{itemize}
@@ -235,6 +240,28 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 \end{frame}
 
 \begin{frame}
+	\frametitle{Simulador}
+	\begin{itemize}
+		\item Para ver se nossa implementação foi feita corretamente, fizemos um simulador para averiguar se a corrida estava coerente. 
+		\item Os resultados estão a seguir:
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.2]{10.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.2]{11.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Entrada}
 	\begin{center}
 		\texttt{\$ ./ep2 d n [v|u] [-v]}
@@ -261,12 +288,13 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 			\centering
 			\includegraphics[scale=0.4]{5-b.png}
 		\end{figure}
-		\item No final, mostra os ciclistas quebrados, a ordem de chegada e quem venceu ou se houve empate.
+		\item No final, mostra os ciclistas quebrados (número do ciclista e volta que quebrou), a ordem de chegada (número do ciclista e tempo) e quem venceu ou se houve empate.
 	\end{itemize}
 \end{frame}
 	
 \begin{frame}
 	\begin{itemize}
+		\item Se o resultado impresso na imagem fosse \texttt{TEAM 1 WIN*}, isso significa que o terceiro dessa equipe passou o terceiro da outra equipe durante a corrida.
 		\item No modo debug, temos as seguintes informações (respectivamente): o número do ciclista, seu time, a distância percorrida na volta, o status, qual pista ele está (interna ou externa), a distância total percorrida e a volta.
 		\begin{figure}[!h]
 			\centering
@@ -278,7 +306,22 @@ Temos que simular uma das provas do ciclismo, a perseguição por equipe. No pro
 \begin{frame}
 	\frametitle{Testes}
 	\begin{itemize}
-		\item Para os testes, executamos o programa da seguinte maneira:
+		\item Para os testes, utilizamos as seguintes máquinas:
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.37]{13.png}
+		\end{figure}
+		\item O uso de CPU ficou assim:
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.37]{12.png}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item Executamos o programa da seguinte maneira:
 		\item \quad \texttt{\$ /usr/bin/time -v ./ep2 d n v}
 		\item Com isso, temos uma saída desse tipo, além da saída do programa:
 		\begin{figure}[!h]

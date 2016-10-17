@@ -3,7 +3,7 @@
  *         Luís Felipe de Melo Costa Silva                    9297961
  * 
  *  Arquivo:   cyclist_info.h
- *  Descrição: BArquivo que contém a definição de cyclist (ciclista).
+ *  Descrição: Arquivo que contém a definição de cyclist (ciclista).
  ********************************************************************/ 
 
 #ifndef CYCLIST_INFO_H

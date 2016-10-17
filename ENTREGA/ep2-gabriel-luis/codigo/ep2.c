@@ -4,24 +4,7 @@
  * 
  *  Arquivo:    ep2.c
  *  Compilação: make
- *  Execução:   ./ep2 d n [v|u] [-v]
- *  Descrição:  Simula uma das provas do ciclismo, a perseguição por 
- *              equipes, com o uso de threads representando cada 
- *              ciclista. Sobre a entrada:
- *              d: tamanho da pista
- *              n: número de ciclistas em cada equipe. 
- *              v: simulações com velocidades aleatórias a cada volta. 
- *              u: simulações com velocidades uniformes de 60 km/h.  
- *              -v: mostrar debug.
- *              A saída mostra um relatório informando a cada volta 
- *              completada pelo terceiro ciclista de uma equipe, todos
- *              os 3 primeiros ciclistas daquela equipe, o número da 
- *              volta, e o instante de tempo que esse terceiro 
- *              ciclista passou pela linha de chegada (considerando 
- *              que a simulação começa no instante de tempo 0). A 
- *              opção debug mostra a cada 60 ms o status de cada 
- *              posição da pista.
- *              
+ *  Execução:   ./ep2 d n [v|u] [-v]              
  ********************************************************************/ 
 
 #include <stdio.h>
