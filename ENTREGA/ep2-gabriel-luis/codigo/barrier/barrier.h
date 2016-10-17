@@ -1,13 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   barrier.h
- *  Descrição: Biblioteca feita para lidar melhor com as barreiras de 
- *             sincronização. O principal problema encontrado foi o 
- *             fato de quando um ciclista quebrava, havia uma 
- *             dificuldade para executar as barreiras com uma thread a
- *             menos.
  ********************************************************************/ 
 
 #ifndef BARRIER_H

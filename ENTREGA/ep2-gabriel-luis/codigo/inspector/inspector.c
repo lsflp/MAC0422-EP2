@@ -1,11 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   inspector.c
- *  Descrição: Implementa uma espécie de fiscal (um juiz), que 
- *             estaria analisando a prova durante seu decorrer. O 
- *             arquivo .c contém uma função privada, descrita abaixo.
  ********************************************************************/ 
 
 #include "inspector.h"

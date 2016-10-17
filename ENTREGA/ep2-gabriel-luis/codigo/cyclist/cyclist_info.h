@@ -1,9 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   cyclist_info.h
- *  Descrição: Arquivo que contém a definição de cyclist (ciclista).
  ********************************************************************/ 
 
 #ifndef CYCLIST_INFO_H

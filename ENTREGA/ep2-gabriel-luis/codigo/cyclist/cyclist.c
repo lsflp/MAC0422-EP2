@@ -1,11 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   cyclist.c
- *  Descrição: Biblioteca que trata das funções referentes aos 
- *             ciclistas. O arquivo .c possui algumas funções 
- *             privadas, descritas abaixo.
  ********************************************************************/ 
 
 #include "cyclist.h"

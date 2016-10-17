@@ -1,10 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   cyclist.h
- *  Descrição: Biblioteca que trata das funções referentes ao 
- *             ciclistas.
  ********************************************************************/ 
  
 #ifndef CYCLIST_H

@@ -1,8 +1,5 @@
 #  Nomes: Gabriel Capella                       Números USP: 8962078 
 #         Luís Felipe de Melo Costa Silva                    9297961
-# 
-#  Arquivo:   Makefile
-#  Descrição: Feito para compilar o programa
 
 C=gcc
 CFLAGS= -Wall -Wno-unused-result -O3 -pedantic

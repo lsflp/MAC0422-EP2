@@ -1,10 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
  *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:   inspector.h
- *  Descrição: Implementa uma espécie de fiscal (um juiz), que 
- *             estaria analisando a prova durante seu decorrer. 
  ********************************************************************/ 
 
 #ifndef INSPECTOR_H

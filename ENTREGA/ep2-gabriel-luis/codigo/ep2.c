@@ -1,10 +1,6 @@
 /********************************************************************
  *  Nomes: Gabriel Capella                       Números USP: 8962078 
- *         Luís Felipe de Melo Costa Silva                    9297961
- * 
- *  Arquivo:    ep2.c
- *  Compilação: make
- *  Execução:   ./ep2 d n [v|u] [-v]              
+ *         Luís Felipe de Melo Costa Silva                    9297961 
  ********************************************************************/ 
 
 #include <stdio.h>
